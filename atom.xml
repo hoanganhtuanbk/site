@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-09-12T13:18:36+00:00</updated>
+    <updated>2014-10-02T12:39:32+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/10/02/highly-strung/</id>
+        <title>Highly Strung</title>
+        <link href="/2014/10/02/highly-strung/"/>
+        <published>2014-10-02T13:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;This blog post is way overdue.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/07/27/tell-dont-ask/</id>
@@ -174,26 +186,6 @@
         <published>2013-11-21T22:56:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That&#39;s it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2013/08/23/test-deafness/</id>
-        <title>Test Deafness</title>
-        <link href="/2013/08/23/test-deafness/"/>
-        <published>2013-08-23T02:26:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;A few months ago I was talking to a musician friend of mine. He is also
-Brazilian, same age as me, and moved to the UK on the same year I did.
-As we were talking about music, I mentioned I like punk rock. He said he
-likes punk rock as well, but as a musician, he listens to a bit of
-everything. The conversation was going well until he asked me what my
-favourite bands were. &quot;&lt;a href=&quot;http://en.wikipedia.org/wiki/Legi%C3%A3o_Urbana&quot;&gt;Legiao
-Urbana&lt;/a&gt;&quot; is my
-favourite Brazilian band I said. &quot;Seriously?&quot; he said with a puzzled
-face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
 
 </summary>
         
