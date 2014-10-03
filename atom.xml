@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2014-10-03T13:42:03+00:00</updated>
+    <updated>2014-10-03T13:44:39+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/10/03/guide-to-deploying-artifacts-with-jenkins/</id>
+        <title>A Very Quick Guide to Deploying Artifacts With Jenkins</title>
+        <link href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/"/>
+        <published>2014-10-03T00:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;http://jenkins-ci.org/&quot;&gt;Jenkins&lt;/a&gt; is an open-source continuous integration sever. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/10/02/highly-strung/</id>
@@ -174,18 +186,6 @@
         <published>2014-01-21T15:20:00+00:00</published>
         
         <summary type="html">&lt;p&gt;We are very happy to announce that &lt;a href=&quot;https://twitter.com/samirtalwar&quot;&gt;Samir Talwar&lt;/a&gt; is joining us as our first craftsman. Mash and I first met Samir back in October 2010, when he joined &lt;a href=&quot;http://londonswcraft.com&quot;&gt;LSCC&lt;/a&gt;. Samir became a very active LSCC member, ran many technical sessions, became an LSCC Associate, and is now part of the LSCC organisation team.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2013/11/21/starting-craftsmanship-communities/</id>
-        <title>Starting a Software Craftsmanship Community</title>
-        <link href="/2013/11/21/starting-craftsmanship-communities/"/>
-        <published>2013-11-21T22:56:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That&#39;s it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
 
 </summary>
         
