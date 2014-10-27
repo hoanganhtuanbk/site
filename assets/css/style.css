@@ -1448,3 +1448,160 @@ ul.blog-tags a:hover i {
 .info-blocks .info-blocks-in p {
 	font-size: 12px;
 }
+
+.feature-panel {
+	height: 500px;
+	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
+	width: 100%;
+	z-index: -1;
+}
+
+.jumbotron {
+	height: 600px;
+	background: transparent;
+	color: white;
+	text-align: center;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.block-v1 {
+	padding: 50px 0;
+}
+
+.content-boxes-v3 i {
+	top: 8px;
+	float: left;
+	position: relative;
+	margin-right: 8px;
+}
+
+.content-boxes-v3 .content-boxes-in-v3 {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+h3.heading-sm {
+	font-size: 20px;
+}
+
+.title-v1 {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.title-v1 h2 {
+	font-size: 28px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 20px;	
+	text-transform: uppercase;
+} 
+
+.title-v1 h3 {
+	font-size: 20px;
+	position: relative;
+	/*margin-bottom: 5px;
+	padding-bottom: 15px;*/
+	text-transform: uppercase;
+}
+
+.jumbotron h1{
+	font-family:'Oxygen', sans-serif;
+	color: #e67e22;
+}
+
+h2:after {
+	bottom: 0;
+	left: 50%;
+	height: 1px;
+	width: 70px;
+	content: " ";
+	margin-left: -35px;
+	position: absolute;
+	background: #e67e22;
+}
+
+.services, .blogs, .clients-section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fafafa;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.sandroBookImage img {
+	max-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 10px 10px 0px gray;*/
+}
+
+
+.parallax-quote {
+	background-color: white; 
+	padding: 100px 0;
+	position: relative;
+	text-align: center;
+}
+
+.parralax-quote-in {
+	padding: 0 80px;
+	position: relative;
+}
+
+.parallax-quote-in p {
+	font-size: 28px;
+	color: #545454;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.customerQuote {
+	color: #e67e22;
+	font-size: 18px;
+}
+
+
+.thumbnail img {
+  min-height: 200px;
+}
+
+.news-v1 p ul {
+	color: #555;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+.news-v1 h4 {
+	padding-top: 15px;
+}
+
+.news-v1-in {
+	background-color: white;
+}
+
+#owl-demo .item{
+  margin: 45px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
