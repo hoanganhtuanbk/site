@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="/assets/css/pages/page_contact.css">
 <!-- CSS Implementing Plugins -->
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
 <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
 <link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
 <link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
@@ -30,6 +32,8 @@
 <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 <!-- Custom -->
 <link rel="stylesheet" href="/assets/css/codurance/app.css">
+<!--fonts -->
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
 
 
@@ -136,7 +140,7 @@
 
 <p>I've developed simple version of this concept using Spring Integration. The first step is to create a Router that routes inbound trade events into channels that are specific to a trade. If the channel doesn't exist then the Router will create a new one and register it with the Spring framework.</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">String</span> <span class="nf">dispatch</span><span class="o">(</span><span class="n">CustomMessage</span> <span class="n">inputMessage</span><span class="o">)</span> <span class="o">{</span>
+<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="n">String</span> <span class="nf">dispatch</span><span class="o">(</span><span class="n">CustomMessage</span> <span class="n">inputMessage</span><span class="o">)</span> <span class="o">{</span>
   <span class="n">String</span> <span class="n">channelName</span> <span class="o">=</span> <span class="n">inputMessage</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">+</span> <span class="n">CHANNEL_SUFFIX</span><span class="o">;</span>
 
   <span class="kd">synchronized</span> <span class="o">(</span><span class="n">channelName</span><span class="o">.</span><span class="na">intern</span><span class="o">())</span> <span class="o">{</span>
@@ -148,29 +152,32 @@
   <span class="o">}</span>
 
   <span class="k">return</span> <span class="n">channelName</span><span class="o">;</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>Creation of a channel is the only place where synchronisation is required. We only synchronise on the channel name which corresponds to the trade id. Hence contention is minimal. I also attach a Polling Consumer to the channel at the point that the channel is created. Creation of a channel and registering it to Spring framework is quite straight forward as shown in the snippet below:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="n">QueueChannel</span> <span class="nf">createNewChannel</span><span class="o">(</span><span class="n">String</span> <span class="n">channelName</span><span class="o">)</span> <span class="o">{</span>
-  <span class="n">QueueChannel</span> <span class="n">activeChannel</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">QueueChannel</span><span class="o">();</span>
+<div class="highlight"><pre><code class="java"><span class="kd">private</span> <span class="n">QueueChannel</span> <span class="nf">createNewChannel</span><span class="o">(</span><span class="n">String</span> <span class="n">channelName</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">QueueChannel</span> <span class="n">activeChannel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueChannel</span><span class="o">();</span>
   <span class="n">activeChannel</span><span class="o">.</span><span class="na">setBeanName</span><span class="o">(</span><span class="n">channelName</span><span class="o">);</span>
   <span class="n">activeChannels</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">channelName</span><span class="o">,</span> <span class="n">activeChannel</span><span class="o">);</span>
   <span class="n">applicationContext</span><span class="o">.</span><span class="na">getBeanFactory</span><span class="o">().</span><span class="na">registerSingleton</span><span class="o">(</span><span class="n">channelName</span><span class="o">,</span> <span class="n">activeChannel</span><span class="o">);</span>
   <span class="k">return</span> <span class="n">activeChannel</span><span class="o">;</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>Although I attach a Polling Consumer to each channel. We don't have to have a thread per channel. We can use a Task Executor to run the polling consumers which will allow much better control over the number of concurrent threads in the system using a thread pool:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">startConsumingFromChannel</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">consumerName</span><span class="o">,</span> <span class="kd">final</span> <span class="n">PollingConsumer</span> <span class="n">activeConsumer</span><span class="o">)</span> <span class="o">{</span>
+<div class="highlight"><pre><code class="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">startConsumingFromChannel</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">consumerName</span><span class="o">,</span> <span class="kd">final</span> <span class="n">PollingConsumer</span> <span class="n">activeConsumer</span><span class="o">)</span> <span class="o">{</span>
   <span class="n">activeConsumer</span><span class="o">.</span><span class="na">setBeanName</span><span class="o">(</span><span class="n">consumerName</span><span class="o">);</span>
   <span class="n">activeConsumer</span><span class="o">.</span><span class="na">setAutoStartup</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
   <span class="n">activeConsumer</span><span class="o">.</span><span class="na">setBeanFactory</span><span class="o">(</span><span class="n">applicationContext</span><span class="o">.</span><span class="na">getBeanFactory</span><span class="o">());</span>
   <span class="n">activeConsumer</span><span class="o">.</span><span class="na">setTaskExecutor</span><span class="o">(</span><span class="n">consumerExecutorPool</span><span class="o">);</span>
   <span class="n">applicationContext</span><span class="o">.</span><span class="na">getBeanFactory</span><span class="o">().</span><span class="na">registerSingleton</span><span class="o">(</span><span class="n">consumerName</span><span class="o">,</span> <span class="n">activeConsumer</span><span class="o">);</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>Finally (not yet implemented) you can run a Reaper Thread that can remove channels and consumers that have not seen activity for a specified threshold. You can also back the inbound channel with a Message Store to ensure that the system can come backup in a consistent state on failure.</p>
@@ -235,6 +242,7 @@
 <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
 <!-- JS Page Level -->
@@ -246,6 +254,7 @@
         App.init();
         App.initSliders();
         Index.initParallaxSlider();
+        Index.initOwlCarousel();
         Contact.initMap();
     });
 </script>

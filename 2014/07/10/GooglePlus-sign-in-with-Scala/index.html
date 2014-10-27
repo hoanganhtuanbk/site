@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="/assets/css/pages/page_contact.css">
 <!-- CSS Implementing Plugins -->
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
 <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
 <link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
 <link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
@@ -30,6 +32,8 @@
 <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 <!-- Custom -->
 <link rel="stylesheet" href="/assets/css/codurance/app.css">
+<!--fonts -->
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
 
 
@@ -154,7 +158,7 @@
 
 <p>First we need to add an AuthenticationFilter to our Scalatra application.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">javax.servlet.ServletContext</span>
+<div class="highlight"><pre><code class="scala"><span class="k">import</span> <span class="nn">javax.servlet.ServletContext</span>
 
 <span class="k">import</span> <span class="nn">com.codurance.cerebro.controllers.MainController</span>
 <span class="k">import</span> <span class="nn">com.codurance.cerebro.security.AuthenticationFilter</span>
@@ -165,12 +169,13 @@
         <span class="n">context</span><span class="o">.</span><span class="n">mount</span><span class="o">(</span><span class="k">new</span> <span class="nc">AuthenticationFilter</span><span class="o">,</span> <span class="s">&quot;/*&quot;</span><span class="o">)</span>
         <span class="n">context</span><span class="o">.</span><span class="n">mount</span><span class="o">(</span><span class="k">new</span> <span class="nc">MainController</span><span class="o">,</span> <span class="s">&quot;/*&quot;</span><span class="o">)</span>
     <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>Then, in the AuthenticationFilter, we need to redirect to the sign-in page when we don't have a user in the session. We also need to exclude the pages and URLs that don't need a user to be logged in.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
 
 <span class="k">import</span> <span class="nn">org.scalatra.ScalatraFilter</span>
 
@@ -195,7 +200,8 @@
         <span class="o">!(</span><span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/signin&quot;</span><span class="o">)</span> <span class="o">||</span> <span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/authorise&quot;</span><span class="o">)</span> <span class="o">||</span> <span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/not-authorised&quot;</span><span class="o">))</span>
     <span class="o">}</span>
 
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>For more information about filters, check the <a href="http://www.scalatra.org/">Scalatra</a> documentation.</p>
@@ -204,7 +210,7 @@
 
 <p>Then we need a sign-in page, that is displayed when the user is not authenticated.</p>
 
-<div class="highlight"><pre><code class="language-jade" data-lang="jade"><span class="p">-</span> <span class="n">attributes</span><span class="o">(</span><span class="s">&quot;title&quot;</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;Cerebro&quot;</span>
+<div class="highlight"><pre><code class="jade"><span class="p">-</span> <span class="n">attributes</span><span class="o">(</span><span class="s">&quot;title&quot;</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;Cerebro&quot;</span>
 <span class="p">-</span> <span class="n">attributes</span><span class="o">(</span><span class="s">&quot;layout&quot;</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;/WEB-INF/templates/layouts/no-header.jade&quot;</span>
 
 <span class="p">-@ </span><span class="k">val</span> <span class="n">originalUri</span><span class="k">:</span> <span class="kt">String</span>
@@ -242,7 +248,8 @@
     <span class="na">data-cookiepolicy=</span><span class="s">&#39;single_host_origin&#39;</span>)
 
 <span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;https://plus.google.com/js/client:plusone.js&#39;</span>)
-<span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#39;</span>)</code></pre></div>
+<span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#39;</span>)
+</code></pre></div>
 
 
 <p>If you are not using Jade or want more details, check the <a href="https://developers.google.com/+/web/signin/add-button">official documentation</a> about how to <a href="https://developers.google.com/+/web/signin/add-button">add the sign-in button</a> to your page.</p>
@@ -253,7 +260,7 @@
 
 <p>We then need a controller that will respond to all these requests, displays the respective pages, and do the authorisation.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
 
 <span class="k">import</span> <span class="nn">javax.servlet.http.</span><span class="o">{</span><span class="nc">HttpServletResponse</span><span class="o">,</span> <span class="nc">HttpServletRequest</span><span class="o">}</span>
 
@@ -265,12 +272,13 @@
         <span class="n">jade</span><span class="o">(</span><span class="n">page</span><span class="o">,</span> <span class="n">all_attributes</span><span class="k">:</span> <span class="k">_</span><span class="kt">*</span><span class="o">)</span>
     <span class="o">}</span>
 
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
 
 <span class="k">import</span> <span class="nn">com.codurance.cerebro.security.CoduranceAuthorisation.authorise</span>
 
@@ -299,14 +307,15 @@
         <span class="n">authorise</span><span class="o">(</span><span class="n">authCode</span><span class="o">)</span>
     <span class="o">}</span>
 
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p>The MainController responds to "/authorise", which invokes the authorisation function defined inside CoduranceAuthorisation. Note that we receive the "authCode" from the Google+ authentication. Once the user was authenticated, we had to make the application available just for users using a Codurance email. For that, we had to invoke the <a href="https://developers.google.com/+/api/latest/people">Google+ People API</a> to get more information (email address, domain, etc).</p>
 
 <p>The authorise function would then check if the user belongs to the Codurance domain and add her to the session.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
 
 <span class="k">import</span> <span class="nn">java.net.URL</span>
 <span class="k">import</span> <span class="nn">javax.servlet.http.</span><span class="o">{</span><span class="nc">HttpSession</span><span class="o">,</span> <span class="nc">HttpServletResponse</span><span class="o">,</span> <span class="nc">HttpServletRequest</span><span class="o">}</span>
@@ -354,7 +363,8 @@
         <span class="nc">GooglePlusJSONResponseParser</span><span class="o">.</span><span class="n">toUser</span><span class="o">(</span><span class="n">userInfo</span><span class="o">.</span><span class="n">bodyString</span><span class="o">,</span> <span class="n">tokenResponse</span><span class="o">.</span><span class="n">toString</span><span class="o">)</span>
     <span class="o">}</span>
 
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span>
+</code></pre></div>
 
 
 <p><strong>Note</strong> that in the GOOGLE_PLUS_PEOPLE_URL we specify all the fields we are interested in, including the <em>domain</em> and <em>emails</em>.</p>
@@ -363,13 +373,14 @@
 
 <p><strong>IMPORTANT:</strong> Don't forget to import add the Google+ APIs to your sbt build file.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-oauth2&quot;</span> <span class="o">%</span> <span class="s">&quot;v2-rev59-1.17.0-rc&quot;</span><span class="o">,</span>
-    <span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-plus&quot;</span> <span class="o">%</span> <span class="s">&quot;v1-rev115-1.17.0-rc&quot;</span><span class="o">,</span></code></pre></div>
+<div class="highlight"><pre><code class="scala">    <span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-oauth2&quot;</span> <span class="o">%</span> <span class="s">&quot;v2-rev59-1.17.0-rc&quot;</span><span class="o">,</span>
+    <span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-plus&quot;</span> <span class="o">%</span> <span class="s">&quot;v1-rev115-1.17.0-rc&quot;</span><span class="o">,</span>
+</code></pre></div>
 
 
 <p>That's about it. You now can display the name of the user on all your pages, using a default layout.</p>
 
-<div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="o">-@</span> <span class="k">val</span> <span class="n">title</span><span class="k">:</span> <span class="kt">String</span>
+<div class="highlight"><pre><code class="scala"><span class="o">-@</span> <span class="k">val</span> <span class="n">title</span><span class="k">:</span> <span class="kt">String</span>
 <span class="o">-@</span> <span class="k">val</span> <span class="n">headline</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="n">title</span>
 <span class="o">-@</span> <span class="k">val</span> <span class="n">body</span><span class="k">:</span> <span class="kt">String</span>
 <span class="o">-@</span> <span class="k">val</span> <span class="n">user</span><span class="k">:</span> <span class="kt">com.codurance.cerebro.security.User</span>
@@ -384,7 +395,8 @@
                 <span class="n">span</span> <span class="nc">Hello</span> <span class="o">#{</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">displayName</span><span class="o">}</span>
         <span class="n">div</span>
             <span class="n">h1</span><span class="k">=</span> <span class="n">headline</span>
-            <span class="o">!=</span> <span class="n">body</span></code></pre></div>
+            <span class="o">!=</span> <span class="n">body</span>
+</code></pre></div>
 
 
 
@@ -447,6 +459,7 @@
 <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
 <!-- JS Page Level -->
@@ -458,6 +471,7 @@
         App.init();
         App.initSliders();
         Index.initParallaxSlider();
+        Index.initOwlCarousel();
         Contact.initMap();
     });
 </script>

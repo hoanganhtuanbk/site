@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Codurance</title>
-    <link href="/atom.xml" rel="self"/>
-    <link href=""/>
-    <updated>2014-10-27T22:48:35+00:00</updated>
+    <link href="//atom.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2014-10-27T23:44:57+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
