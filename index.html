@@ -4,34 +4,30 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <title>Codurance</title>
-
-<!-- Meta -->
+ <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- CSS Global Compulsory-->
-<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- CSS Global Compulsory -->
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/responsive.css">
-<link rel="stylesheet" href="/assets/css/headers/header1.css">
-<link rel="stylesheet" href="/assets/css/pages/page_one.css">
-<link rel="stylesheet" href="/assets/css/pages/page_contact.css">
+
 <!-- CSS Implementing Plugins -->
-<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
-<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
-<link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
-<link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
-<link rel="stylesheet" href="/assets/css/pages/page_404_error.css">
-<link rel="stylesheet" href="/assets/css/syntax.css">
-<!-- CSS Theme -->
+
+<!-- CSS Theme -->  
+<link rel="stylesheet" href="/assets/css/app.css">  
 <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
-<link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
-<!-- Custom -->
-<link rel="stylesheet" href="/assets/css/codurance/app.css">
+
+<!-- CSS Customization -->
+<link rel="stylesheet" href="/assets/css/custom.css">
 <!--fonts -->
 <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
@@ -50,52 +46,50 @@
 </head>
 
 <body>
+
+<div class="wrapper">
 <!--=== Header ===-->
 <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-responsive-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/casestudies">Case Studies</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/careers/craftsman">Careers</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
-                        <li><a href="/aboutus/ourteam">Our Team</a></li>
-                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
-                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
-                    </ul></li>
-                </ul>
-                <div class="search-open">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button class="btn-u" type="button">Go</button>
-                        </span>
-                    </div><!-- /input-group -->
-                </div>
-            </div><!-- /navbar-collapse -->
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container"></div>
         </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img id="logo-header" src="/assets/img/codurance.png" height="45px;" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/casestudies">Case Studies</a></li>
+                        <li><a href="/videos">Videos</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/careers/craftsman">Careers</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                            <li><a href="/aboutus/ourteam">Our Team</a></li>
+                            <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                            <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                        </ul></li>
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
     </div>
-</div><!--/header-->
-
-
-
+    <!--=== End Header ===--> 
 <!--=== End Header ===-->
 
 
@@ -106,36 +100,36 @@
     <div class="container">
         <div class="jumbotron">
             <h1>We build
-                <span style="color: white; text-shadow: 1px 1px 1px #7f8c8d;">well crafted</span> software</h1>
+                <span class="highlight">well crafted</span> software</h1>
         </div>
     </div>
 </div>
 <!-- values panel-->
 
 <div class="values-section">
-    <div class="block-v1">
+    <div class="block-header">
         <div class="container">
-            <div class="title-v1">
+            <div class="title-header">
                 <h2>Our values</h2>
             </div>
-            <div class="row content-boxes-v3">
+            <div class="row content-boxes">
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-trophy fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <i class="fa fa-trophy fa-3x"></i>
+                    <div class="content-box">
                         <h3 class="heading-sm">QUALITY</h3>
                         <p>We don't negotiate on quality. Software must deliver more value with time and not be a source of increasing pain and cost.</p>
                     </div> 
                 </div>
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-exchange fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <i class="fa fa-exchange fa-3x"></i>
+                    <div class="content-box">
                         <h3 class="heading-sm">COLLABORATION</h3>
                         <p>Sucessful software projects are a result of productive partnerships. Collaboration is at the heart of our development practices.</p>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-heart fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <i class="fa fa-heart fa-3x"></i>
+                    <div class="content-box">
                         <h3 class="heading-sm">PASSION</h3>
                         <p>Software development is not just a job for us. It's our passion. We are proud of our work and we are constantly improving.</p>
                     </div>
@@ -146,37 +140,37 @@
 </div>
 
 <!-- Services panel -->
-<div class="services">
+<div class="section gray-section">
     <div class="container">
-        <div class="title-v1">
+        <div class="title-header">
             <h2>What we do</h2>
         </div>
         <div class="row">
-            <div class="col-md-6 content-boxes-v3">
+            <div class="col-md-6 content-boxes">
                 <div class="clearfix margin-bottom-10">
                     <i class="fa fa-check-circle fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <div class="content-box">
                         <h3 class="heading-sm">SOFTWARE CREATION</h3>
                         <p>Our team of dedicated software craftsmen can help bring your ideas to life. </p>
                     </div>
                 </div>
                 <div class="clearfix margin-bottom-10">
                     <i class="fa fa-check-circle fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <div class="content-box">
                         <h3 class="heading-sm">CONSULTANCY</h3>
                         <p>We provide specialist advice to help you start a new project, improve the quality of your software, and nurture productive and vibrant teams.</p>
                     </div>
                 </div>
                 <div class="clearfix margin-bottom-10">
                     <i class="fa fa-check-circle fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <div class="content-box">
                         <h3 class="heading-sm">TRAINING</h3>
                         <p>We run public and private training courses to help you master XP practices and build well crafted software.</p>
                     </div>
                 </div>
                 <div class="clearfix margin-bottom-10">
                     <i class="fa fa-check-circle fa-3x"></i>
-                    <div class="content-boxes-in-v3">
+                    <div class="content-box">
                         <h3 class="heading-sm">GIVING BACK</h3>
                         <p>
                             We love to share what we know and are proud organisers of the <a href="">London Software Craftsmanship Community</a>.
@@ -190,9 +184,9 @@
                     <div class="content-boxes-in-v3">
                         <h3 class="heading-sm">SOFTWARE CRAFTSMANSHIP</h3>
                         <p>Check out the book from our co-founder Sandro Mancuso.</p>
-                        <div class="sandroBookImage">
+                        <div>
                             <a href="http://www.amazon.co.uk/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/ref=la_B00O0J11Z0_1_1?s=books&ie=UTF8&qid=1413930938&sr=1-1">
-                                <img class="img-responsive" src="/assets/img/home/softwarecraftmanshipbook.jpg">
+                                <img class="img-responsive sandroBookImage" src="/assets/img/custom/softwarecraftmanshipbook.jpg">
                             </a>
                         </div>
                     </div>
@@ -203,101 +197,93 @@
 </div>
 
 <!-- clients panel -->
-<div class="clients-section">
+<div class="section">
     <div class="container">
-        <div class="title-v1">
-            <h2>Clients & Partners</h2>
+        <div class="title-header">
+            <h2>Clients &amp; Partners</h2>
         </div>
-        <div id="owl-demo" class="owl-carousel owl-theme">
+        <div id="client-carousel" class="owl-carousel owl-theme">
             <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/skillsmatter.jpg">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/skillsmatter.jpg">
             </div>
             <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/xebia.jpg">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/xebia.jpg">
             </div>
             <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/valtech.png">
-            </div>
-            <!--div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/ubs.png">
-            </div-->
-            <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/agilityinmind.png">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/ubs.png">
             </div>
             <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/societygenerale.jpg">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/valtech.png">
             </div>
             <div class="item">
-                <img class="img-responsive" src="/assets/img/home/clientlogos/flextrade.png">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/agilityinmind.png">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/societygenerale.jpg">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="/assets/img/custom/home/clients/flextrade.png">
             </div>
         </div>
-        <!--<div class="customNavigation">
-            <a class="btn prev"><i class="fa fa-caret-left fa-3x"></i></a>
-            <a class="btn next"><i class="fa fa-caret-right fa-3x"></i></a>
-        </div>-->
     </div>
 </div>
 
 
 <!-- Activity panel -->
-<div class="blogs">
+<div class="section gray-section">
     <div class="container">
-        <div class="title-v1">
+        <div class="title-header">
             <h2>Latest Blogs</h2>
         </div>
-        <div class="row news-v1">
-            <div class="col-md-4 margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="/assets/img/blog/jenkinsPost/jenkins.png">
-                        <div class="caption">
-                            <a href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/">
-                                <h4>A Very Quick Guide to Deploying Artifacts With Jenkins</h4>
-                            </a>
-                            <p>Jenkins is an open-source continuous integration sever. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client....</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> 03 Oct 2014</li>
-                                <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a></li>
-                            </ul>
+        <div class="row blog-boxes">
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="/assets/img/custom/blog/jenkinsPost/jenkins.png" alt="A Very Quick Guide to Deploying Artifacts With Jenkins">
+                        <div class="blog-content">
+                            <h3><a href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/">A Very Quick Guide to Deploying Artifacts With Jenkins</a></h3>
+                            <p>Jenkins is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client....</p>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a></li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> 03 Oct 2014</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="/assets/img/blog/highly-strung.jpg">
-                        <div class="caption">
-                            <a href="/2014/10/02/highly-strung/">
-                                <h4>Highly Strung</h4>
-                            </a>
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="/assets/img/custom/blog/highly-strung.jpg" alt="Highly Strung">
+                        <div class="blog-content">
+                            <h3><a href="/2014/10/02/highly-strung/">Highly Strung</a></h3>
                             <p>This blog post is way overdue. A couple of months ago, I wrote a talk entitled Highly Strung for the Virtual Java User Group (vJUG) on when and how to...</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> 02 Oct 2014</li>
-                                <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/samir-talwar/'>Samir Talwar</a></li>
-                            </ul>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> <a class='author' href='/blog/author/samir-talwar/'>Samir Talwar</a></li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> 02 Oct 2014</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="/assets/img/blog/tell-dont-ask.png">
-                        <div class="caption">
-                            <a href="/2014/07/27/tell-dont-ask/">
-                                <h4>Tell don't ask</h4>
-                            </a>
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="/assets/img/custom/blog/tell-dont-ask.png" alt="Tell don't ask">
+                        <div class="blog-content">
+                            <h3><a href="/2014/07/27/tell-dont-ask/">Tell don't ask</a></h3>
                             <p>Tell don't ask we have all heard it. Yet it is one of the most violated principles. It is also one of the most important principles to follow if you...</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> 27 Jul 2014</li>
-                                <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a></li>
-                            </ul>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a></li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> 27 Jul 2014</li>
+                        </ul>
                     </div>
                 </div>
+                
             </div>
-        </div>
+
     </div>
 </div>
 
@@ -326,18 +312,15 @@
 </div><!--/copyright-->
 
 <!--=== End Copyright ===-->
+</div>
 
 <!-- JS Global Compulsory -->
 <script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
 <!-- JS Page Level -->
@@ -347,14 +330,13 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initSliders();
-        Index.initParallaxSlider();
         Index.initOwlCarousel();
         Contact.initMap();
     });
 </script>
 <!--[if lt IE 9]>
-    <script src="/assets/plugins/respond.js"></script>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>    
 <![endif]-->
 
 </body>

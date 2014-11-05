@@ -4,34 +4,30 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <title>Codurance - A Very Quick Guide to Deploying Artifacts With Jenkins</title>
-
-<!-- Meta -->
+ <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- CSS Global Compulsory-->
-<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- CSS Global Compulsory -->
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/responsive.css">
-<link rel="stylesheet" href="/assets/css/headers/header1.css">
-<link rel="stylesheet" href="/assets/css/pages/page_one.css">
-<link rel="stylesheet" href="/assets/css/pages/page_contact.css">
+
 <!-- CSS Implementing Plugins -->
-<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
-<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
-<link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
-<link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
-<link rel="stylesheet" href="/assets/css/pages/page_404_error.css">
-<link rel="stylesheet" href="/assets/css/syntax.css">
-<!-- CSS Theme -->
+
+<!-- CSS Theme -->  
+<link rel="stylesheet" href="/assets/css/app.css">  
 <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
-<link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
-<!-- Custom -->
-<link rel="stylesheet" href="/assets/css/codurance/app.css">
+
+<!-- CSS Customization -->
+<link rel="stylesheet" href="/assets/css/custom.css">
 <!--fonts -->
 <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
@@ -50,52 +46,50 @@
 </head>
 
 <body>
+
+<div class="wrapper">
 <!--=== Header ===-->
 <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-responsive-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/casestudies">Case Studies</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/careers/craftsman">Careers</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
-                        <li><a href="/aboutus/ourteam">Our Team</a></li>
-                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
-                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
-                    </ul></li>
-                </ul>
-                <div class="search-open">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button class="btn-u" type="button">Go</button>
-                        </span>
-                    </div><!-- /input-group -->
-                </div>
-            </div><!-- /navbar-collapse -->
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container"></div>
         </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img id="logo-header" src="/assets/img/codurance.png" height="45px;" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/casestudies">Case Studies</a></li>
+                        <li><a href="/videos">Videos</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/careers/craftsman">Careers</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                            <li><a href="/aboutus/ourteam">Our Team</a></li>
+                            <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                            <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                        </ul></li>
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
     </div>
-</div><!--/header-->
-
-
-
+    <!--=== End Header ===--> 
 <!--=== End Header ===-->
 
 
@@ -132,7 +126,7 @@
         </div>
         
 
-        <p><a href="http://jenkins-ci.org/">Jenkins</a> is an open-source continuous integration sever. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.</p>
+        <p><a href="http://jenkins-ci.org/">Jenkins</a> is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.</p>
 
 <p>Both Amir and I have just recently started at Codurance as apprentices.</p>
 
@@ -150,13 +144,13 @@
 
 <p>Go to your client project and select configure. Create a post-build action and select ‘archive artififacts’ from the drop down menu. Add the type of files you want to archive (and eventually, copy and export). Next add another post-build action ‘Build other project’ and enter the name of the build item you created earlier.</p>
 
-<p><img src="/assets/img/blog/jenkinsPost/archiveArtifacts.png" alt="Archive artifacts build step" /></p>
+<p><img src="/assets/img/custom/blog/jenkinsPost/archiveArtifacts.png" alt="Archive artifacts build step" /></p>
 
 <h4>Step 3: Install the Copy Artifact plugin</h4>
 
 <p>Next you need to install the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin">Copy Artifact plugin</a> in the Manage Plugins section of Jenkins. Go to "[PROJECT-NAME]-Output" > configure and add a new build step. Because you have installed the Copy Artifact plugin you should see an option called ‘copy artifacts from another project’ in the drop down menu. Specify the folder or files you want copied and set the location path. Notice that we set set our location to "var/www/clients/…". This leads to a new folder on the server (we were using an Apache server on an Amazon EC2 instance). Don't do what we did and set the path using an http address(!).</p>
 
-<p><img src="/assets/img/blog/jenkinsPost/copyArtifacts.png" alt="Archive artifacts build step" /></p>
+<p><img src="/assets/img/custom/blog/jenkinsPost/copyArtifacts.png" alt="Archive artifacts build step" /></p>
 
 <h4>Step 4: Test it Out</h4>
 
@@ -177,7 +171,7 @@
 
 <p>Don’t forget to restart your server to finalise the changes!</p>
 
-<p><img src="/assets/img/blog/jenkinsPost/console.png" alt="Archive artifacts build step" /></p>
+<p><img src="/assets/img/custom/blog/jenkinsPost/console.png" alt="Archive artifacts build step" /></p>
 
 
         
@@ -226,18 +220,15 @@
 </div><!--/copyright-->
 
 <!--=== End Copyright ===-->
+</div>
 
 <!-- JS Global Compulsory -->
 <script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
 <!-- JS Page Level -->
@@ -247,14 +238,13 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initSliders();
-        Index.initParallaxSlider();
         Index.initOwlCarousel();
         Contact.initMap();
     });
 </script>
 <!--[if lt IE 9]>
-    <script src="/assets/plugins/respond.js"></script>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>    
 <![endif]-->
 
 </body>
