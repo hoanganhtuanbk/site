@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-11-09T11:13:03+00:00</updated>
+    <updated>2014-11-10T05:05:32+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/11/10/not-all-managers-are-stupid/</id>
+        <title>Not all managers are stupid</title>
+        <link href="/2014/11/10/not-all-managers-are-stupid/"/>
+        <published>2014-11-10T04:20:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;&lt;em&gt;(The following story was a bit altered in order to keep it short(ish) and to protect the innocents)&lt;/em&gt;&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/11/09/too-many-cooks/</id>
@@ -174,18 +186,6 @@
         <published>2014-02-19T17:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Pairing is often associated with programming. There&#39;s a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it&#39;s a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/02/08/resist-the-just-in-case/</id>
-        <title>Resist the "Just in Case"</title>
-        <link href="/2014/02/08/resist-the-just-in-case/"/>
-        <published>2014-02-08T16:50:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Of all the projects I have worked on a big regret has been; adding complexity where it was not needed. I was recently reminded of, how easy it is to fall into that trap.&lt;/p&gt;
 
 </summary>
         
