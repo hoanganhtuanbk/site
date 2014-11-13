@@ -72,6 +72,12 @@ body {
   height: auto;
 }
 
+.values-section .read-more-button {
+	margin: auto; 
+	margin-top: 20px;
+	max-width: 121px;
+}
+
 /*  Heading Titles - Home Page */
 
 .block-header {
