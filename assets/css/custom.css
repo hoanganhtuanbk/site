@@ -172,6 +172,10 @@ body {
 	text-transform: uppercase;
 }
 
+.content-boxes .service-block-default {
+	background: white;
+}
+
 /* Blog boxes */
 
 .blog-boxes .blog-content {
