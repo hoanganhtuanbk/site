@@ -1,4 +1,4 @@
-/* Add here all your css styles (customizations) */
+	/* Add here all your css styles (customizations) */
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -398,5 +398,29 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	display:block;
+}
+
+/* Practice */
+.practices .practices-container {
+	border: 1px solid #eee;
+	border-radius: 15px !important;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+
+.practices .practice-header {
+	margin-top: 60px;
+}
+
+.practices-container .practices-icon {
+	margin-right: 20px;
+	float: left;
+	position: relative;
+	top: 8px;
+}
+
+.practices-container .practices-info {
+	overflow: hidden;
+	padding-left: 20px;
 }
 
