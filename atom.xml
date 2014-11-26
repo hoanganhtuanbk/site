@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-11-24T17:39:51+00:00</updated>
+    <updated>2014-11-26T18:58:39+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/11/26/looking-forward-to-2015/</id>
+        <title>Codurance - Looking forward to 2015</title>
+        <link href="/2014/11/26/looking-forward-to-2015/"/>
+        <published>2014-11-26T18:31:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;One year ago Mash and I were thinking how great it would be to be surrounded by great craftsmen, work with good clients, mentor talented apprentices, and a have decent office. We thought to ourselves: “We don’t want a company with employees. We want a company where we have friends. Friends where besides enjoying their company, we also admired their professionalism and knowledge.&quot; One year later, we are happy to say we achieved all that. We had a great first year and managed to build a very talented team, which we are hoping to grow even more next year.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/11/10/not-all-managers-are-stupid/</id>
@@ -174,18 +186,6 @@
         <published>2014-03-03T11:37:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Yesterday a wonderful 19-month journey came to an end. I released the last chapter of my book &lt;a href=&quot;http://leanpub.com/socra&quot;&gt;Software Craftsmanship: Professionalism, Pragmatism, Pride&lt;/a&gt;. As an avid reader since a young age, writing a book was always something I wanted to do. For me, it didn&#39;t matter if people would read it or not; I just wanted to write a book I was proud of. I wanted to write a book that would help developers and companies to get better. A book that could inspire developers to care about their craft. I also wanted a book that my kids, at some point in the future, could read and be inspired, even if they had chosen different professions. I&#39;m not sure if they will read it or be inspired by it, but at least I&#39;m giving my best shot.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/02/19/pairing-without-programming/</id>
-        <title>Pairing without Programming</title>
-        <link href="/2014/02/19/pairing-without-programming/"/>
-        <published>2014-02-19T17:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Pairing is often associated with programming. There&#39;s a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it&#39;s a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.&lt;/p&gt;
 
 </summary>
         
