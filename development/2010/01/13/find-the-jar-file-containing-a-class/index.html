@@ -127,6 +127,8 @@
         </div>
         
 
+        
+
         <p>I often need to know which jar file contains a particular class and I'm sure most people have that problem at some point. You can use <a href="http://www.jarfinder.com">jarFinder</a> but it's not always up-to-date or the class might be in a jar private to your organisation. You can use the following command to do a search on your file systems for all jars, and search in them for the class you're trying to find:</p>
 
 <pre><code>find -name *.jar -print -exec jar tvf {} \; | egrep "\.jar|&lt;Class Name&gt;"

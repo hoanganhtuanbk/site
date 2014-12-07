@@ -127,6 +127,8 @@
         </div>
         
 
+        
+
         <p>Often I see Unit Tests with the test methods that have the same name as the method under test prefixed with the word "test" e.g. <code>testSubmitApplication</code>. This provides no extra information on which "flow" of the mothod is being tested. Other test method names provide a bit more information by suffixing the nature of the test e.g. <code>testSubmitApplicationWithInvalidCriteria</code>. It better but not much better. A number of IDEs actually allow the developer to generate test method names based on the class under test which in my opinion defeats the object.</p>
 
 <p>Unit test methods should be named in such as way that they provide a clear description of the test. In my opinion the prefix "test" is redundent and should never appear in your test method names unless it is part of the domain vocabulary. For example <code>AppicationSubmittedWithInvalidCriteriaMustRaiseException</code>* is more informative then <code>testSubmitApplication</code>. Providing a more descriptive name also serves to keep a clear focus on the flow under test and leads the devloper to create a test method per flow.</p>
