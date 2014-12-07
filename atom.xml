@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Codurance</title>
-    <link href="//atom.xml" rel="self"/>
-    <link href="/"/>
-    <updated>2014-12-07T20:53:23+00:00</updated>
+    <link href="/atom.xml" rel="self"/>
+    <link href=""/>
+    <updated>2014-12-07T20:59:59+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/12/06/life-as-an-apprentice/</id>
+        <title>What is it like to be a Codurance Apprentice?</title>
+        <link href="/2014/12/06/life-as-an-apprentice/"/>
+        <published>2014-12-06T18:31:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;This month Codurance is celebrating its first birthday. A lot has happened during that time, including the hiring of two apprentices. One of which, I am pleased to say is me!&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/11/26/looking-forward-to-2015/</id>
@@ -174,18 +186,6 @@
         <published>2014-03-11T20:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;On 4th of March 2014, a few days before my baby boy Samuel completed two months, a well-regarded cardiologist—let&#39;s call him &lt;em&gt;Dr. Smith&lt;/em&gt;—gave us the news that Samuel had a heart condition called &lt;a href=&quot;http://en.wikipedia.org/wiki/Pulmonary_valve_stenosis&quot;&gt;pulmonary valve stenosis&lt;/a&gt;. Dr. Smith&#39;s recommendation was that Samuel had a heart procedure called &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;balloon pulmonary valvotomy&lt;/a&gt; or &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;ballon valvuloplasty&lt;/a&gt; as soon as possible. The procedure was scheduled to 11th of March 2014, on &lt;a href=&quot;http://theharleystreetclinic.co.uk/&quot;&gt;The Harley Street Clinic&lt;/a&gt;. Needless to say, the whole family was devastated.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/03/03/craftsmanship-book-released/</id>
-        <title>Software Craftsmanship book is now finished</title>
-        <link href="/2014/03/03/craftsmanship-book-released/"/>
-        <published>2014-03-03T11:37:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Yesterday a wonderful 19-month journey came to an end. I released the last chapter of my book &lt;a href=&quot;http://leanpub.com/socra&quot;&gt;Software Craftsmanship: Professionalism, Pragmatism, Pride&lt;/a&gt;. As an avid reader since a young age, writing a book was always something I wanted to do. For me, it didn&#39;t matter if people would read it or not; I just wanted to write a book I was proud of. I wanted to write a book that would help developers and companies to get better. A book that could inspire developers to care about their craft. I also wanted a book that my kids, at some point in the future, could read and be inspired, even if they had chosen different professions. I&#39;m not sure if they will read it or be inspired by it, but at least I&#39;m giving my best shot.&lt;/p&gt;
 
 </summary>
         
