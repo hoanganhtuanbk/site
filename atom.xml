@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2014-12-11T20:50:23+00:00</updated>
+    <updated>2014-12-12T23:57:00+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/12/13/naming-test-classes-and-methods/</id>
+        <title>Naming Test Classes and Methods</title>
+        <link href="/2014/12/13/naming-test-classes-and-methods/"/>
+        <published>2014-12-13T00:27:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;What should my first test be? What should I test next? These are common questions that I&#39;m asked over and over again. I quite often ask these questions myself. Deciding on what to test is hard. Deciding on the order that things should be tested is even harder.[^1] But writing tests first is not the only problem. How often did we get frustrated while dealing with existing tests which we had no idea what they are testing?&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/12/06/life-as-an-apprentice/</id>
@@ -174,18 +186,6 @@
         <published>2014-04-10T00:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Inspired by Alistair Cockburn&#39;s excellent &lt;a href=&quot;http://alistair.cockburn.us/Hexagonal+architecture&quot;&gt;article&lt;/a&gt; on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/03/11/just-another-day-at-the-office/</id>
-        <title>Just Another Day at the Office</title>
-        <link href="/2014/03/11/just-another-day-at-the-office/"/>
-        <published>2014-03-11T20:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;On 4th of March 2014, a few days before my baby boy Samuel completed two months, a well-regarded cardiologist—let&#39;s call him &lt;em&gt;Dr. Smith&lt;/em&gt;—gave us the news that Samuel had a heart condition called &lt;a href=&quot;http://en.wikipedia.org/wiki/Pulmonary_valve_stenosis&quot;&gt;pulmonary valve stenosis&lt;/a&gt;. Dr. Smith&#39;s recommendation was that Samuel had a heart procedure called &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;balloon pulmonary valvotomy&lt;/a&gt; or &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;ballon valvuloplasty&lt;/a&gt; as soon as possible. The procedure was scheduled to 11th of March 2014, on &lt;a href=&quot;http://theharleystreetclinic.co.uk/&quot;&gt;The Harley Street Clinic&lt;/a&gt;. Needless to say, the whole family was devastated.&lt;/p&gt;
 
 </summary>
         
