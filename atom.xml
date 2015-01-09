@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-01-07T09:04:15+00:00</updated>
+    <updated>2015-01-09T13:06:02+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/01/09/impact-mapping/</id>
+        <title>Impact Mapping</title>
+        <link href="/2015/01/09/impact-mapping/"/>
+        <published>2015-01-09T10:30:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;We had the pleasure to visit a client who asked us to facilitate a workshop. The aim was to create a plan for their investors in order to release the next round of funding for a social media website. They had a product backlog that was full of of features but they were not sure how to prioritise them. They also had a release roadmap but were unclear as to why certain things needed to be done.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/12/13/naming-test-classes-and-methods/</id>
@@ -174,18 +186,6 @@
         <published>2014-04-13T20:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;On 9th of April 2014, we created our first screencast on our new &lt;a href=&quot;https://www.youtube.com/user/codurance&quot;&gt;YouTube channel&lt;/a&gt;. The idea is to have a series of (reasonably) short videos explaining some of the techniques we use when developing software. The videos will range from basic to advanced topics but in no particular order.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/04/10/keeping-the-domain-in-core/</id>
-        <title>Keeping the domain in the core</title>
-        <link href="/2014/04/10/keeping-the-domain-in-core/"/>
-        <published>2014-04-10T00:30:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Inspired by Alistair Cockburn&#39;s excellent &lt;a href=&quot;http://alistair.cockburn.us/Hexagonal+architecture&quot;&gt;article&lt;/a&gt; on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.&lt;/p&gt;
 
 </summary>
         
