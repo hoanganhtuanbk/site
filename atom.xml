@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-01-12T17:11:10+00:00</updated>
+    <updated>2015-01-28T02:36:57+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/01/27/balanced-abstraction-principle/</id>
+        <title>Balanced Abstraction Principle</title>
+        <link href="/2015/01/27/balanced-abstraction-principle/"/>
+        <published>2015-01-27T10:30:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;One of the things that make code complicated to read and understand is when the instructions inside a method are at different levels of abstraction.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/01/09/impact-mapping/</id>
@@ -174,18 +186,6 @@
         <published>2014-05-24T22:18:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that&#39;s ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? &lt;a href=&quot;http://twitter.com/sebrose&quot;&gt;Seb Rose&lt;/a&gt; compiled a &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;list of blog posts and tweets&lt;/a&gt; about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;his post&lt;/a&gt;.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/04/13/explanatory-methods/</id>
-        <title>Screencast - Explanatory Methods</title>
-        <link href="/2014/04/13/explanatory-methods/"/>
-        <published>2014-04-13T20:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;On 9th of April 2014, we created our first screencast on our new &lt;a href=&quot;https://www.youtube.com/user/codurance&quot;&gt;YouTube channel&lt;/a&gt;. The idea is to have a series of (reasonably) short videos explaining some of the techniques we use when developing software. The videos will range from basic to advanced topics but in no particular order.&lt;/p&gt;
 
 </summary>
         

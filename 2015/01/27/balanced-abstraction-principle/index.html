@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance - Toby Retallick</title>
+<title>Codurance - Balanced Abstraction Principle</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +96,7 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">Toby Retallick</h2>
+            <h2 class="pull-left">Balanced Abstraction Principle</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 
@@ -119,164 +119,77 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-  
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 27 Jan 2015</li>
+                <li><i class="fa fa-pencil"></i> Sandro Mancuso</li>
+            </ul>
+        </div>
         
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="http://www.retrogamer.net/wp-content/uploads/2014/03/SirAlanSugarWith464.png" alt=""/></p>
+
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2014/12/06/life-as-an-apprentice/">What is it like to be a Codurance Apprentice?</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 06 Dec 2014</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/craftsmanship/">craftsmanship</a>
-                
-                    <a href="/blog/tag/apprenticeship/">apprenticeship</a>
-                
-            </li>
-            
-        </ul>
-        <p>This month Codurance is celebrating its first birthday. A lot has happened during that time, including the hiring of two apprentices. One of which, I am pleased to say is me! Three months into my apprenticeship, I thought I would provide some insight into how my apprenticeship is progressing, what...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2014/12/06/life-as-an-apprentice/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-          
-  
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/jenkinsPost/jenkins.png" alt=""/></p>
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/balanced-abstraction-principle.jpeg" alt="Balanced Abstraction Principle">
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/">A Very Quick Guide to Deploying Artifacts With Jenkins</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 03 Oct 2014</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/continuous integration/">continuous integration</a>
-                
-                    <a href="/blog/tag/Jenkins/">Jenkins</a>
-                
-            </li>
-            
-        </ul>
-        <p>[Jenkins](http://jenkins-ci.org/) is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client. Both Amir and I have just recently started at Codurance as apprentices. This week, one of our tasks was to...</p>
 
-        <p><a class="btn-u btn-u-small" href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
+        <p>One of the things that make code complicated to read and understand is when the instructions inside a method are at different levels of abstraction.</p>
 
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
+<p>Let's assume that our application only allows the logged-in user to see trips from her friends. If users are not friends, no trips should be displayed.</p>
 
+<p>An example:</p>
+
+<pre><code>public List&lt;Trip&gt; tripsByFriend(User user, User loggedInUser) {
+    return (user.friends().contains(loggedInUser))    
+                    ? userRepository.findTripsBy(user.id())
+                    : Collections.emptyList();
+}
+</code></pre>
+
+<p>In the code above, all the instructions in the body of the method are in different levels of abstraction. We have instructions validating friendship, instructions that fetch the list of trips of a friend via a collaborator, and a low level Java API that return an empty and immutable list. On top of that, we have the business behaviour itself.</p>
+
+<p>Now let's look at a refactored version of the same method:</p>
+
+<pre><code>public List&lt;Trip&gt; tripsByFriend(User user, User loggedInUser) {
+    return (user.isFriendsWith(loggedInUser)) 
+                    ? tripsBy(user)
+                    : noTrips();
+}
+
+private List&lt;Trip&gt; tripsBy(User user) {
+    userRepository.findTripsBy(friend.id());
+}
+
+private List&lt;Trip&gt; noTrips() {
+    return Collections.emptyList();
+}   
+</code></pre>
+
+<p>In this new version, we extracted the low-level abstractions to private methods and also moved some behaviour to the User class. With this change, all the instructions are on the same level of abstraction, making it clear what the business rule is. The public method is now telling us a story, without worrying about technical implementation details. The code now reads without any bumps: "If user is friends with the logged-in user, return trips by user, otherwise return no trips."</p>
+
+<h3>Balanced Abstraction Principle (BAP)</h3>
+
+<p>The Balanced Abstraction Principle defines that all code constructs grouped by a higher-level construct should be on the same level of abstraction. That means:</p>
+
+<ul>
+<li>All instructions inside a method should be at the same level of abstraction</li>
+<li>All public methods inside a class should be at the same level of abstraction</li>
+<li>All classes inside a package/namespace</li>
+<li>All sibling packages/namespace inside a parent package/namespace</li>
+<li>All modules, sub-systems, etc.</li>
+</ul>
+
+
+<p>The principle also applies to tests—all tests for a single unit (method, class, module, system) should be at the same level of abstraction.</p>
+
+<h3>BAP and SRP</h3>
+
+<p>Code that complies with the Single Responsibility Principle has a higher chance to also be compliant to the Balanced Abstraction Principle. However, this is not always the case and the opposite is not always true.</p>
+
+<h3>Conclusion</h3>
+
+<p>In order to achieve well-crafted code, we need to take many design principles into consideration and I believe that the Balanced Abstraction Principle (BAP) is a missing piece in the SOLID principles and overall software design.</p>
+
+
+        
     </div>
     <!--End Blog Post-->
 </div>
