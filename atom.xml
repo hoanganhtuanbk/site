@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-02-23T17:05:26+00:00</updated>
+    <updated>2015-03-15T23:06:44+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/03/15/rethinking-pair-programming/</id>
+        <title>Rethinking Pair Programming</title>
+        <link href="/2015/03/15/rethinking-pair-programming/"/>
+        <published>2015-03-15T22:49:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;By default, we always do our work in pairs. We strongly believe that the quality achieved by two people working on the same task is superior to when done by a single person. However, there are times where pairing is not very efficient.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/01/27/balanced-abstraction-principle/</id>
@@ -174,18 +186,6 @@
         <published>2014-05-26T15:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Someone who aspires to quality.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/05/24/tdd-is-not-about-you/</id>
-        <title>TDD is NOT (just) about you</title>
-        <link href="/2014/05/24/tdd-is-not-about-you/"/>
-        <published>2014-05-24T22:18:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that&#39;s ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? &lt;a href=&quot;http://twitter.com/sebrose&quot;&gt;Seb Rose&lt;/a&gt; compiled a &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;list of blog posts and tweets&lt;/a&gt; about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;his post&lt;/a&gt;.&lt;/p&gt;
 
 </summary>
         
