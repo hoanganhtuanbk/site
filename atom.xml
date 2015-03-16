@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-15T23:06:44+00:00</updated>
+    <updated>2015-03-16T16:11:05+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/03/16/installing-zprezto-a-quick-guide/</id>
+        <title>How to install Prezto with Zsh for your OS X Terminal</title>
+        <link href="/2015/03/16/installing-zprezto-a-quick-guide/"/>
+        <published>2015-03-16T22:49:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Once and a while, whether it be by someone I&#39;m pairing with or someone who&#39;s just peeked over my shoulder, I&#39;ll get asked how I &quot;got my terminal to look like that&quot;. From now on I&#39;m just going to direct them to this post as I&#39;m going to take a short while to explain how I achieved the colourful canvas I log into every day.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/03/15/rethinking-pair-programming/</id>
@@ -174,18 +186,6 @@
         <published>2014-07-10T15:35:00+00:00</published>
         
         <summary type="html">&lt;h3&gt;The requirements&lt;/h3&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/05/26/a-craftsman-is/</id>
-        <title>A Software Craftsman Is</title>
-        <link href="/2014/05/26/a-craftsman-is/"/>
-        <published>2014-05-26T15:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Someone who aspires to quality.&lt;/p&gt;
 
 </summary>
         
