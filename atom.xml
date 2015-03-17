@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-16T16:11:05+00:00</updated>
+    <updated>2015-03-17T10:36:35+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -12,12 +12,24 @@
     <rights>Copyright (c) Codurance</rights>
     
     <entry>
+        <id>/2015/03/17/javascript_a_tough_love/</id>
+        <title>JavaScript - A Tough Love</title>
+        <link href="/2015/03/17/javascript_a_tough_love/"/>
+        <published>2015-03-17T10:49:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;In the 90’s we were witnesses of browser wars. Wars which created one of the most hated languages: Javascript. Web designers touch by Javascript at the beginning of 21st century constantly refused to fix bugs titled as “It doesn’t work in Internet Explorer” or “Netscape Navigator doesn’t show…”. At this time we used pure languages and tried to understand the design of our web browser in order to cope with compatibility issues.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
         <id>/2015/03/16/installing-zprezto-a-quick-guide/</id>
         <title>How to install Prezto with Zsh for your OS X Terminal</title>
         <link href="/2015/03/16/installing-zprezto-a-quick-guide/"/>
         <published>2015-03-16T22:49:00+00:00</published>
         
-        <summary type="html">&lt;p&gt;Once and a while, whether it be by someone I&#39;m pairing with or someone who&#39;s just peeked over my shoulder, I&#39;ll get asked how I &quot;got my terminal to look like that&quot;. From now on I&#39;m just going to direct them to this post as I&#39;m going to take a short while to explain how I achieved the colourful canvas I log into every day.&lt;/p&gt;
+        <summary type="html">&lt;p&gt;Once in a while, whether it be by someone I&#39;m pairing with or someone who&#39;s just peeked over my shoulder, I&#39;ll get asked how I &quot;got my terminal to look like that&quot;. From now on I&#39;m just going to direct them to this post as I&#39;m going to take a short while to explain how I achieved the colourful canvas I log into every day.&lt;/p&gt;
 
 </summary>
         
@@ -174,18 +186,6 @@
         <published>2014-07-15T12:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;It&#39;s been a few weeks since SoCraTes UK 2014, and I&#39;ve had some time to reflect on the event and my learning experiences. Today, I want to talk about the biggest things that stood out for me.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/07/10/GooglePlus-sign-in-with-Scala/</id>
-        <title>Google+ Sign-In with Scalatra</title>
-        <link href="/2014/07/10/GooglePlus-sign-in-with-Scala/"/>
-        <published>2014-07-10T15:35:00+00:00</published>
-        
-        <summary type="html">&lt;h3&gt;The requirements&lt;/h3&gt;
 
 </summary>
         
