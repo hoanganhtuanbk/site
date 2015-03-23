@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance - Blog</title>
+<title>Codurance - Project Sizing</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,7 @@
                         <li><a href="/services">Services</a></li>
                         <li><a href="/casestudies">Case Studies</a></li>
                         <li><a href="/videos">Videos</a></li>
-                        <li class="active"><a href="/blog">Blog</a></li>
+                        <li><a href="/blog">Blog</a></li>
                         <li><a href="/careers/craftsman">Careers</a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
                             <li><a href="/aboutus/ourteam">Our Team</a></li>
@@ -96,9 +96,15 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">Blog</h2>
+            <h2 class="pull-left">Project Sizing</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
+                
+                    <li>
+                    
+                        <a href="/blog">Blog</a>
+                    
+                    </li>
                 
             </ul>
         </div>
@@ -113,178 +119,58 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-        
-
-        <div class="container">
-    <div class="row blog-page">
-        <!-- Left Sidebar -->
-        <div class="col-md-9 md-margin-bottom-40">
-            
-                <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/development/2010/01/06/creating-and-using-a-maven-archetype/">Creating and using a maven archetype</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 06 Jan 2010</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/maven/">maven</a>
-                
-            </li>
-            
-        </ul>
-        <p>The best way to create a maven archetype is to start with an existing project. In the maven project (simple or multiple-module) directory execute: mvn archetype:create-from-project The archetype is created under target/generated-sources/archetypes with the following directory structure: +---src +---main +---resources +---archetype-resources ¦ +---src ¦ +---main ¦ +---java (directory containing your...</p>
-
-        <p><a class="btn-u btn-u-small" href="/development/2010/01/06/creating-and-using-a-maven-archetype/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-            
-                <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/process/2010/01/04/using-jira-for-agile-project-management-without-green-hopper/">Using JIRA for Agile Project Management (without Green Hopper)</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 04 Jan 2010</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/agile/">agile</a>
-                
-                    <a href="/blog/tag/backlog/">backlog</a>
-                
-                    <a href="/blog/tag/jira/">jira</a>
-                
-                    <a href="/blog/tag/scrum/">scrum</a>
-                
-            </li>
-            
-        </ul>
-        <p>Jira from Atlassian  is a very popular issue tracking software and can be quite effectively used for Agile Project Management. Jira has a plugin (Green Hopper) that allows for creation of a backlog, iterations and tasks.  However, with help from the free Mylyn plugin for Eclipse I was able to...</p>
-
-        <p><a class="btn-u btn-u-small" href="/process/2010/01/04/using-jira-for-agile-project-management-without-green-hopper/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-            
-                <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/development/2009/04/17/configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug/">Configuring a WAR project in Eclipse & Setting up Jetty to Run/Debug</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 17 Apr 2009</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a> </li>
-            
-        </ul>
-        <p>Generate eclipse project: mvn eclipse:eclipse Import the project into eclipse In Eclipse - Create a new Run/Debug config - Set main class toorg.codehaus.classworlds.Launcher Go to the argument tab: - Set Program arguments to jetty:run - Set VM arguments to -Xmx512M -Dclassworlds.conf=${M2_HOME}/bin/m2.conf -Dmaven.home=${M2_HOME} Go to the classpath tab: - Remove the...</p>
-
-        <p><a class="btn-u btn-u-small" href="/development/2009/04/17/configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-            
-                <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/development/2009/04/14/userstories-and-when-enough-is-enough/">Userstories and when enough is enough</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 14 Apr 2009</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/mashooq-badar/'>Mashooq Badar</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/agile/">agile</a>
-                
-                    <a href="/blog/tag/user-story/">user-story</a>
-                
-            </li>
-            
-        </ul>
-        <p>Perfection in software is impossible. Software developement is subject to the Law of Diminishing Returns . So how do you decide when enough is enhough? In a recent presentation Al Goerner discussed catagorising stories. Two of the more interesting catagories were "New feature" and "Feature enhancement". In an Agile project...</p>
-
-        <p><a class="btn-u btn-u-small" href="/development/2009/04/14/userstories-and-when-enough-is-enough/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-            
-
-            <!--Pagination-->
-            
-            <div class="text-center">
-                <ul class="pagination">
-
-                    
-                    <li>
-                        <a href="/blog/page5">«</a>
-                    </li>
-                    
-
-
-                    
-                    <li >
-                    
-                        <a href="/blog">1</a>
-                    
-                    
-                    <li >
-                    
-                        <a href="/blog/page2">2</a>
-                    </li>
-                    
-                    
-                    <li >
-                    
-                        <a href="/blog/page3">3</a>
-                    </li>
-                    
-                    
-                    <li >
-                    
-                        <a href="/blog/page4">4</a>
-                    </li>
-                    
-                    
-                    <li >
-                    
-                        <a href="/blog/page5">5</a>
-                    </li>
-                    
-                    
-                    <li  class="active" >
-                    
-                        <a href="/blog/page6">6</a>
-                    </li>
-                    
-                    
-
-                    
-                </ul>
-            </div>
-            
-            <!--End Pagination-->
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 23 Mar 2015</li>
+                <li><i class="fa fa-pencil"></i> Mashooq Badar</li>
+            </ul>
         </div>
-    </div>
-</div>
+        
+
+        
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/estimates.jpg" alt="Project Sizing">
+        
+
+        <p>Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a "ballpark" figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation.</p>
+
+<h2>Sizing an existing Product Backlog</h2>
+
+<p>Often we will have a set of requirements either in a big document or user-story format. It is important to understand each one of these requirements - especially those that are quite vague. These vague requirements often result in an explosion of features and will invalidate our estimates. The first thing we do is to break larger requirements/user-stories down into smaller chunks so that all are defined at similar level. We try to insure that the stories satisfy the <a href="http://guide.agilealliance.org/guide/invest.html">INVEST</a> criteria. The next step is to further define the scope using assumptions and decisions logged against each story. This work to breakdown user-stories and define their scope is ideally done with the client. At the very least, we walkthrough the whole backlog with the client so that they fully understand the stories and the factors that may impact scope.</p>
+
+<p>Our estimates are based on well understood scope but we also recognise that the scope will change and evolve throughout the duration of the project. Clients generally have a budget agreed and our goal is to provide them with a viable product within that budget. We understand that the viable product may change during the development and the client may want to bring new stories in. We constantly refine our estimates to ensure that the client always understands that the the lowest priority stories may need to be dropped with the introduction of new stories. If the client wishes to keep the lowest priority stories as well then we renegotiate the budget/time for the project. We never negotiate on quality, our craftsmen hone their skills so that quality does not incur any additional cost.</p>
+
+<p>During estimation we will employ other techniques to better understand the viable product. We create user journeys and mockups where appropriate to make our discussion with the client more productive. We also define the technology stack and high-level architecture to better understand the extent of the work. Again we do understand that these are initial designs are are subject to change.</p>
+
+<p>Non-functional requirements are always included during sizing. These are factored in the same backlog and treated like other stories.</p>
+
+<h3>Coming up with a Product Backlog</h3>
+
+<p>If the client does not have a well defined set of requirements then we come-up with a product backlog before we apply the above techniques to size the project. Our preferred technique is to use <a href="http://www.impactmapping.org/">Impact Mapping</a>. This allows us to drill down into the features from a clear goal that the client wants to achieve.
+Documenting assumptions, decisions, risks, issues and dependencies (ADRID)</p>
+
+<p>Documenting ADRID is extremely important during project sizing. At the very start of the project there are a lot of unknowns and it is impossible to define everything. We will log assumptions, decisions, risks, issues, and dependencies against each story. We try to confirm assumptions as much as possible but most will remain open at this stage. The reason these are logged against each story is that they help us provide better estimates. They also allow us to re-estimate the story if one or more of the ADRID no-longer holds true or new ones are identified. We have a regular meeting with the client throughout the duration of the project to see if there are any changes to ADRID and to discover more, if we discover any changes to these then parts or the whole of the backlog may require reestimating. Any changes to the estimates are made with agreement from the client.</p>
+
+<h3>Three-point Estimation Technique</h3>
+
+<p>When estimating stories we use the <a href="http://en.wikipedia.org/wiki/Three-point_estimation">Three-point Estimation</a> Technique. The technique requires us to provide best, worst and likely case scenario for each story. We provide estimates in concrete days and we always assume the story will be developed using pair programming. We use the ADRID logged against each story to ensure that the factors impacting the scope are well understood. The totals for the 3 types of estimates are gathered to work out the Standard Deviation <code>((worst case - best case)/6)</code> and the Weighted Average Estimate <code>(best case + (4*likely case) + worst case)/6</code>. We can then work out the level of confidence as follows:</p>
+
+<ul>
+<li>50% confidence on the Weighted Average</li>
+<li>70% confidence on Weighted Average + Standard Deviation</li>
+<li>95% confidence on Weighted Average + 2 * Standard Deviation</li>
+<li>99.5% confidence on Weighted Average + 3 * Standard Deviation</li>
+</ul>
+
+
+<p>Note: there is a statistical aspects to this type of estimation but it is important to understand that these are still estimates and hence have no guarantees.</p>
+
+<h3>Factor in project setup</h3>
+
+<p>We factor in Project Setup regardless if the project is greenfield or if we are building on an existing codebase. Time is always required to get started. For greenfield projects this may take the form of an Iteration Zero where we setup things like Source Control, Continuous Integration, and Test Environments. If the team is brand new then we must also factor in time to define and evolve our development process and practices.</p>
+
+<h3> Factor in planning meeting, client workshops, and other meetings</h3>
+
+<p>Finally we make sure that the time required for various meetings is factored in. For example planning meetings, retrospectives, demos etc. can take up to a day every two weeks.</p>
 
 
         

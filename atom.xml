@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-20T21:29:24+00:00</updated>
+    <updated>2015-03-23T14:43:09+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/03/23/project-sizing/</id>
+        <title>Project Sizing</title>
+        <link href="/2015/03/23/project-sizing/"/>
+        <published>2015-03-23T14:30:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a &quot;ballpark&quot; figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/03/20/user-stories-guidelines/</id>
@@ -174,18 +186,6 @@
         <published>2014-07-27T12:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;&lt;strong&gt;Tell don&#39;t ask&lt;/strong&gt; we have all heard it. Yet it is one of the most violated principles. It is also one of the most important principles to follow if you want a design that is flexible to change.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/07/18/queue-based-synchronisation/</id>
-        <title>Queue Based Synchronisation</title>
-        <link href="/2014/07/18/queue-based-synchronisation/"/>
-        <published>2014-07-18T12:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;The first rule of using locks for thread synchronisation is, &lt;strong&gt;&quot;Do NOT use them!&quot;&lt;/strong&gt;. Recently I saw an implementation that made heavy use of locks to synchronise access to a shared cache between two threads. The overall approach is explained in the diagram below:&lt;/p&gt;
 
 </summary>
         
