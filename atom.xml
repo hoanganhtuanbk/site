@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-23T14:44:13+00:00</updated>
+    <updated>2015-03-23T19:51:12+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/03/23/multiple-projects-in-visual-studio/</id>
+        <title>Multiple projects in Visual Studio solutions considered harmful</title>
+        <link href="/2015/03/23/multiple-projects-in-visual-studio/"/>
+        <published>2015-03-23T22:49:00+00:00</published>
+        
+        <summary type="html">&lt;h1&gt;Multiple projects in Visual Studio solutions considered harmful&lt;/h1&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/03/23/project-sizing/</id>
@@ -174,18 +186,6 @@
         <published>2014-10-02T13:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;This blog post is way overdue.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/07/27/tell-dont-ask/</id>
-        <title>Tell don't ask</title>
-        <link href="/2014/07/27/tell-dont-ask/"/>
-        <published>2014-07-27T12:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;&lt;strong&gt;Tell don&#39;t ask&lt;/strong&gt; we have all heard it. Yet it is one of the most violated principles. It is also one of the most important principles to follow if you want a design that is flexible to change.&lt;/p&gt;
 
 </summary>
         
