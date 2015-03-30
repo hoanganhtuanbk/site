@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-23T19:51:12+00:00</updated>
+    <updated>2015-03-30T17:01:13+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/03/29/dangerous-words/</id>
+        <title>Dangerous Words</title>
+        <link href="/2015/03/29/dangerous-words/"/>
+        <published>2015-03-29T21:22:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Ludwig Wittgenstein was one the greatest philosophers of 20th century. His book Tractatus Logico-Philosophicus addresses the limits of language and its relationship with reality. A friend of mine, great polemicist, suggested me to read it some years ago to understand one of his favourites conversational &lt;em&gt;deux ex machina&lt;/em&gt;: &quot;I can&#39;t prove that, because of the inherent insufficiency of the language.&quot;&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/03/23/multiple-projects-in-visual-studio/</id>
@@ -174,18 +186,6 @@
         <published>2014-10-03T00:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;&lt;a href=&quot;http://jenkins-ci.org/&quot;&gt;Jenkins&lt;/a&gt; is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/10/02/highly-strung/</id>
-        <title>Highly Strung</title>
-        <link href="/2014/10/02/highly-strung/"/>
-        <published>2014-10-02T13:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;This blog post is way overdue.&lt;/p&gt;
 
 </summary>
         

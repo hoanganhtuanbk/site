@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance</title>
+<title>Codurance - Dangerous Words</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +96,7 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">naming </h2>
+            <h2 class="pull-left">Dangerous Words</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 
@@ -119,73 +119,60 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-        
-             <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/2015_03_29_dangerous_words/wittgenstein.jpg" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2015/03/29/dangerous-words/">Dangerous Words</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 29 Mar 2015</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/felipe-fernandez/'>Felipe Fernandez</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/naming/">naming</a>
-                
-                    <a href="/blog/tag/philosophy/">philosophy</a>
-                
-                    <a href="/blog/tag/expresiveness/">expresiveness</a>
-                
-            </li>
-            
-        </ul>
-        <p>Ludwig Wittgenstein was one the greatest philosophers of 20th century. His book Tractatus Logico-Philosophicus addresses the limits of language and its relationship with reality. A friend of mine, great polemicist, suggested me to read it some years ago to understand one of his favourites conversational deux ex machina: "I can't...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2015/03/29/dangerous-words/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-        
-             <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/2014_12_12/you_are_going_to_call_me_what.jpg" alt=""/></p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2014/12/13/naming-test-classes-and-methods/">Naming Test Classes and Methods</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 13 Dec 2014</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/sandro-mancuso/'>Sandro Mancuso</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/craftsmanship/">craftsmanship</a>
-                
-                    <a href="/blog/tag/tdd/">tdd</a>
-                
-                    <a href="/blog/tag/test-driven development/">test-driven development</a>
-                
-                    <a href="/blog/tag/naming/">naming</a>
-                
-                    <a href="/blog/tag/unit test/">unit test</a>
-                
-            </li>
-            
-        </ul>
-        <p>What should my first test be? What should I test next? These are common questions that I'm asked over and over again. I quite often ask these questions myself. Deciding on what to test is hard. Deciding on the order that things should be tested is even harder.1 But writing...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2014/12/13/naming-test-classes-and-methods/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 29 Mar 2015</li>
+                <li><i class="fa fa-pencil"></i> Felipe Fernandez</li>
+            </ul>
+        </div>
         
 
+        
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/2015_03_29_dangerous_words/wittgenstein.jpg" alt="Dangerous Words">
+        
+
+        <p>Ludwig Wittgenstein was one the greatest philosophers of 20th century. His book Tractatus Logico-Philosophicus addresses the limits of language and its relationship with reality. A friend of mine, great polemicist, suggested me to read it some years ago to understand one of his favourites conversational <em>deux ex machina</em>: "I can't prove that, because of the inherent insufficiency of the language."</p>
+
+<p>Needless to say, I didn't understand most of Wittgenstein's book, but I started to share the concern about the problems that ambiguous or unrigorous language generates. Whenever I heard or read some well crafted thought, I obsessively revisit those words to figure out why they are so effective communicating.</p>
+
+<p>Clean, simple and expressive code tries to defeat, as much as possible, the gap previously mentioned between language and reality. However, without getting into the nitty-gritty details of narrative and syntax, we, as software community, have failed creating proper words that are central for our profession.</p>
+
+<p>I don't want to approach the etiology of some of those words, but just shed some light on what are the problems generated for those unaccurate words.</p>
+
+<h2>Unit testing</h2>
+
+<p>Testing is one of the fields with more candidates to The Razzie words awards. Integration, system, component, acceptance and, of course, unit. What do they mean really? No two snow crystals are alike, and no two programmers opinions about those words either. This <a href="https://www.google.co.uk/search?q=testing+pyramid&amp;espv=2&amp;biw=1680&amp;bih=951&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=IpgMVduKIcLY7Aag64DQDQ&amp;ved=0CAYQ_AUoAQ">google search</a> is disheartening.</p>
+
+<p>Unit is probably the worst, as it's the most ambiguous and the most important for TDD practitioners. A unit could be defined as something with clear boundaries, integrated in a bigger system and providing a single function. Defining those terms in a concrete problem is really complicated and it depends heavily on the language and ecosystem that we're using.</p>
+
+<p>I think that more concrete naming like object, module or method testing would be easier for newbies. Because, and this is something important to note for seniors, when we get used to words, they lose their original meaning and get impregnated with our experiences and bias. So, yes, we all know what unit testing means, but maybe nobody thinks on the same.</p>
+
+<h2>Extreme programming</h2>
+
+<p>Last LSCC roundtable had some very interesting conversations. One of those was about extremes. Almost everybody agreed that extremes are generally bad, and the word "dogma" appears several times as a synonym of "extreme". Ideas located at the limits of some spectrum are usually considered as extreme, but also ideas that refuse to change when confronted with reality.</p>
+
+<p>I don't think that XP is an eccentrity or some fundamentalist view of programming that refuses to evolve. I think that XP could be thought as radical or vanguardist, but that, at least in our zeitgeist, doesn't have that pejorative connotation of extreme.</p>
+
+<p>To be honest, the first time that I heard the phrase "Extreme Programming", I thought that it was some weirdness related to the no-rules-super-hacker mindset.</p>
+
+<h2>Service</h2>
+
+<p>Whoever that has worked with old style Spring-Hibernate webapp will recognize the following flow: Controller -> Service -> DAO. What does that Service layer usually do? Holding the whole business logic of our app in a non-OOP fashion. What does service mean? "The action of helping or doing work for someone". Every class or method that we write does work for someone else, so what is the point of calling a class WhateverService?</p>
+
+<p>To make things worse, there are application and domain services in DDD, and we have SOA (Service oriented architecture) and its younger cousin Microservices. Everything seems to be a service in software. Often I prefer to use words like API, server, backend, just to avoid that overloaded term.</p>
+
+<h2>In Conclusion</h2>
+
+<p>As conclusion this post is not a complain to whoever created or made popular those terms. In fact, I think that people like Martin Fowler, Kent Beck or Uncle Bob have made a great work coining catchy acronyms or locutions. It's just a call to attention to be aware of the dangers of ambiguous words.</p>
+
+<p>In some episode of House of Cards, one politician discuss thoroughly with his team about using "action" or "vision" as key words in a debate. We should have that mindset too, but with pragmatism, of course. That's why I think that is a great idea to create some kind of agreed glossary whenever a new team is created.</p>
+
+<hr />
+
+<p><em>Thanks to Samir for the edits.</em></p>
+
+
+        
     </div>
     <!--End Blog Post-->
 </div>
@@ -194,7 +181,7 @@
 <!-- Right Sidebar -->
 <div class="col-md-3 magazine-page">
     <!-- Blog Latest Tweets -->
-   <div class="blog-twitter margin-bottom-30">
+    <div class="blog-twitter margin-bottom-30">
         <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
