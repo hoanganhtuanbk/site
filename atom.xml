@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-03-30T17:01:13+00:00</updated>
+    <updated>2015-04-13T11:41:47+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/13/design-patterns-in-the-21st-century-part-one/</id>
+        <title>Design Patterns in the 21st Century, Part One</title>
+        <link href="/2015/04/13/design-patterns-in-the-21st-century-part-one/"/>
+        <published>2015-04-13T11:30:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;I&#39;ve been having a bit of trouble blogging recently. In an effort to get back into it, I thought I&#39;d take &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;a talk that I presented at JAX London last year&lt;/a&gt;, split it up into blog-sized posts as it&#39;s pretty long, and post them all week. If you haven&#39;t read it before or seen the talk, I hope you enjoy it.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/03/29/dangerous-words/</id>
@@ -174,18 +186,6 @@
         <published>2014-11-09T11:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Last week, &lt;a href=&quot;http://codurance.com/aboutus/ourteam/&quot;&gt;Sandro&lt;/a&gt; and I flew to Bucharest to meet &lt;a href=&quot;http://alexbolboaca.ro/&quot;&gt;Alex&lt;/a&gt; and &lt;a href=&quot;http://adrianbolboaca.ro/&quot;&gt;Adi Bolboaca&lt;/a&gt;, &lt;a href=&quot;http://about.me/aksalmi&quot;&gt;Aki Salmi&lt;/a&gt; and &lt;a href=&quot;http://code-cop.org/&quot;&gt;Peter Kofler&lt;/a&gt;. We didn&#39;t know what to expect: the agenda was to try a &quot;hardcore coderetreat&quot;, in which the constraints would be incredibly difficult, but when you have six headstrong, opinionated people in a room, you really have no idea what&#39;s going to happen.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/10/03/guide-to-deploying-artifacts-with-jenkins/</id>
-        <title>A Very Quick Guide to Deploying Artifacts With Jenkins</title>
-        <link href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/"/>
-        <published>2014-10-03T00:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;&lt;a href=&quot;http://jenkins-ci.org/&quot;&gt;Jenkins&lt;/a&gt; is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.&lt;/p&gt;
 
 </summary>
         
