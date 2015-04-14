@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance</title>
+<title>Codurance - Design Patterns in the 21st Century: The Abstract Factory Pattern</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,8 @@
 <!--fonts -->
 <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
+
+<link rel="canonical" href="http://monospacedmonologues.com/post/116370706560/design-patterns-in-the-21st-century-the-abstract" />
 
 
 <script>
@@ -96,7 +98,7 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">design-patterns </h2>
+            <h2 class="pull-left">Design Patterns in the 21st Century: The Abstract Factory Pattern</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 
@@ -119,81 +121,130 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-        
-             <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/2015-04-13-design-patterns/part-two.png" alt=""/></p>
-        
-            <p class="blog-image-attr">
-                
-                    <a href="https://flic.kr/p/8eq5hL">Van Nelle Factory IR, by Vincent van der Pas</a>
-                
-            </p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2015/04/14/design-patterns-in-the-21st-century-part-two/">Design Patterns in the 21st Century: The Abstract Factory Pattern</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 14 Apr 2015</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/samir-talwar/'>Samir Talwar</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/design-patterns/">design-patterns</a>
-                
-                    <a href="/blog/tag/functional-programming/">functional-programming</a>
-                
-                    <a href="/blog/tag/java/">java</a>
-                
-            </li>
-            
-        </ul>
-        <p>This is part two of my talk, Design Patterns in the 21st Century. This pattern is used everywhere in Java code, especially in more "enterprisey" code bases. It involves an interface and an implementation. The interface looks something like this: public interface Bakery { Pastry bakePastry(Topping topping); Cake bakeCake(); }...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2015/04/14/design-patterns-in-the-21st-century-part-two/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-        
-             <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/2015-04-13-design-patterns/part-one.jpg" alt=""/></p>
-        
-            <p class="blog-image-attr">
-                
-                    <a href="https://flic.kr/p/D2Dti">Lambda, by greg</a>
-                
-            </p>
-        
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2015/04/13/design-patterns-in-the-21st-century-part-one/">Design Patterns in the 21st Century, Part One</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 13 Apr 2015</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/samir-talwar/'>Samir Talwar</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/design-patterns/">design-patterns</a>
-                
-                    <a href="/blog/tag/functional-programming/">functional-programming</a>
-                
-                    <a href="/blog/tag/java/">java</a>
-                
-            </li>
-            
-        </ul>
-        <p>I've been having a bit of trouble blogging recently. In an effort to get back into it, I thought I'd take a talk that I presented at JAX London last year, split it up into blog-sized posts as it's pretty long, and post them all week. If you haven't read...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2015/04/13/design-patterns-in-the-21st-century-part-one/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 14 Apr 2015</li>
+                <li><i class="fa fa-pencil"></i> Samir Talwar</li>
+            </ul>
+        </div>
         
 
+        
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/2015-04-13-design-patterns/part-two.png" alt="Design Patterns in the 21st Century: The Abstract Factory Pattern">
+        
+
+        <p>This is part two of my talk, <a href="http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html">Design Patterns in the 21st Century</a>.</p>
+
+<hr />
+
+<p>This pattern is used <em>everywhere</em> in Java code, especially in more "enterprisey" code bases. It involves an interface and an implementation. The interface looks something like this:</p>
+
+<pre><code>public interface Bakery {
+    Pastry bakePastry(Topping topping);
+    Cake bakeCake();
+}
+</code></pre>
+
+<p>And the implementation:</p>
+
+<pre><code>public class DanishBakery implements Bakery {
+    @Override public Pastry bakePastry(Topping topping) {
+        return new DanishPastry(topping);
+    }
+
+    @Override public Cake bakeCake() {
+        return new Aeblekage(); // mmmm, apple cake...
+    }
+}
+</code></pre>
+
+<p>More generally, the Abstract Factory pattern is usually implemented according to this structure.</p>
+
+<p><img src="/assets/img/custom/blog/2015-04-13-design-patterns/abstract-factory-pattern-uml.png" alt="Abstract Factory pattern UML diagram" /></p>
+
+<p>In this example, <code>Pastry</code> and <code>Cake</code> are "abstract products", and <code>Bakery</code> is an "abstract factory". Their implementations are the concrete variants.</p>
+
+<p>Now, that's a fairly general example.</p>
+
+<p>In actual fact, most factories only have one "create" method.</p>
+
+<pre><code>@FunctionalInterface
+public interface Bakery {
+    Pastry bakePastry(Topping topping);
+}
+</code></pre>
+
+<p>Oh look, it's a function.</p>
+
+<p>This denegerate case is pretty common in in the Abstract Factory pattern, as well as many others. While most of them provide for lots of discrete pieces of functionality, and so have lots of methods, we often tend to break them up into single-method types, either for flexibility or because we just don't need more than one thing at a time.</p>
+
+<p>So how would we implement this pastry maker?</p>
+
+<pre><code>public class DanishBakery implements Bakery {
+    @Override public Pastry apply(Topping topping) {
+        return new DanishPastry(Topping topping);
+    }
+}
+</code></pre>
+
+<p>OK, sure, that was easy. It looks the same as the earlier <code>DanishBakery</code> except it can't make cake. Delicious apple cake… what's the point of that?</p>
+
+<p>Well, if you remember, <code>Bakery</code> has a <strong>Single Abstract Method</strong>. This means it's a <strong>Functional Interface</strong>.</p>
+
+<p>So what's the functional equivalent to this?</p>
+
+<pre><code>Bakery danishBakery = topping -&gt; new DanishPastry(topping);
+</code></pre>
+
+<p>Or even:</p>
+
+<pre><code>Bakery danishBakery = DanishPastry::new;
+</code></pre>
+
+<p>Voila. Our <code>DanishBakery</code> class has gone.</p>
+
+<p>But we can go further.</p>
+
+<pre><code>package java.util.function;
+/**
+ * Represents a function that
+ * accepts one argument and produces a result.
+ *
+ * @since 1.8
+ */
+@FunctionalInterface
+public interface Function&lt;T, R&gt; {
+    /**
+     * Applies this function to the given argument.
+     */
+    R apply(T t);
+
+    ...
+}
+</code></pre>
+
+<p>We can replace the <code>Bakery</code> with <code>Function&lt;Topping, Pastry&gt;</code>; they have the same types.</p>
+
+<pre><code>Function&lt;Topping, Pastry&gt; danishBakery = DanishPastry::new;
+</code></pre>
+
+<p>In this case, we might want to keep it, as it has a name relevant to our business, but often, <code>Factory</code>-like objects serve no real domain purpose except to help us decouple our code. (<code>UserServiceFactory</code>, anyone?) This is brilliant, but on these occasions, we don't need explicit classes for it—Java 8 has a bunch of interfaces built in, such as <code>Function</code>, <code>Supplier</code> and many more in the <code>java.util.function</code> package, that suit our needs fairly well.</p>
+
+<p>Here's our updated UML diagram:</p>
+
+<p><img src="/assets/img/custom/blog/2015-04-13-design-patterns/abstract-factory-pattern-uml-functional.png" alt="Updated Abstract Factory pattern UML diagram" /></p>
+
+<p>Aaaaaah. Much better.</p>
+
+<hr />
+
+<p>Tomorrow, we'll be looking at the Adapter pattern.</p>
+
+
+        
+        <hr/>
+        <p class="cross-post"><a href="http://monospacedmonologues.com/post/116370706560/design-patterns-in-the-21st-century-the-abstract">This post was cross-posted to my personal blog.</a></p>
+        
     </div>
     <!--End Blog Post-->
 </div>
@@ -202,7 +253,7 @@
 <!-- Right Sidebar -->
 <div class="col-md-3 magazine-page">
     <!-- Blog Latest Tweets -->
-   <div class="blog-twitter margin-bottom-30">
+    <div class="blog-twitter margin-bottom-30">
         <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>

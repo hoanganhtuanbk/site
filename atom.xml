@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-04-13T11:41:47+00:00</updated>
+    <updated>2015-04-14T09:00:43+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/14/design-patterns-in-the-21st-century-part-two/</id>
+        <title>Design Patterns in the 21st Century: The Abstract Factory Pattern</title>
+        <link href="/2015/04/14/design-patterns-in-the-21st-century-part-two/"/>
+        <published>2015-04-14T09:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;This is part two of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/13/design-patterns-in-the-21st-century-part-one/</id>
@@ -174,18 +186,6 @@
         <published>2014-11-10T04:20:00+00:00</published>
         
         <summary type="html">&lt;p&gt;&lt;em&gt;(The following story was a bit altered in order to keep it short(ish) and to protect the innocents)&lt;/em&gt;&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/11/09/too-many-cooks/</id>
-        <title>Too Many Cooks</title>
-        <link href="/2014/11/09/too-many-cooks/"/>
-        <published>2014-11-09T11:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Last week, &lt;a href=&quot;http://codurance.com/aboutus/ourteam/&quot;&gt;Sandro&lt;/a&gt; and I flew to Bucharest to meet &lt;a href=&quot;http://alexbolboaca.ro/&quot;&gt;Alex&lt;/a&gt; and &lt;a href=&quot;http://adrianbolboaca.ro/&quot;&gt;Adi Bolboaca&lt;/a&gt;, &lt;a href=&quot;http://about.me/aksalmi&quot;&gt;Aki Salmi&lt;/a&gt; and &lt;a href=&quot;http://code-cop.org/&quot;&gt;Peter Kofler&lt;/a&gt;. We didn&#39;t know what to expect: the agenda was to try a &quot;hardcore coderetreat&quot;, in which the constraints would be incredibly difficult, but when you have six headstrong, opinionated people in a room, you really have no idea what&#39;s going to happen.&lt;/p&gt;
 
 </summary>
         
