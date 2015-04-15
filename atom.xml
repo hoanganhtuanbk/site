@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-04-14T09:00:43+00:00</updated>
+    <updated>2015-04-15T13:17:51+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/15/making-sense-of-docker-volumes/</id>
+        <title>Making Sense of Docker Volumes</title>
+        <link href="/2015/04/15/making-sense-of-docker-volumes/"/>
+        <published>2015-04-15T09:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;&lt;a href=&quot;http://www.docker.com&quot;&gt;Docker&lt;/a&gt; is a platform that allows users to build, ship, and run distributed applications. Applications are stored inside &lt;strong&gt;docker containers&lt;/strong&gt;.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/14/design-patterns-in-the-21st-century-part-two/</id>
@@ -174,18 +186,6 @@
         <published>2014-11-26T18:31:00+00:00</published>
         
         <summary type="html">&lt;p&gt;One year ago Mash and I were thinking how great it would be to be surrounded by great craftsmen, work with good clients, mentor talented apprentices, and a have decent office. We thought to ourselves: “We don’t want a company with employees. We want a company where we have friends. Friends where besides enjoying their company, we also admired their professionalism and knowledge.&quot; One year later, we are happy to say we achieved all that. We had a great first year and managed to build a very talented team, which we are hoping to grow even more next year.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/11/10/not-all-managers-are-stupid/</id>
-        <title>Not all managers are stupid</title>
-        <link href="/2014/11/10/not-all-managers-are-stupid/"/>
-        <published>2014-11-10T04:20:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;&lt;em&gt;(The following story was a bit altered in order to keep it short(ish) and to protect the innocents)&lt;/em&gt;&lt;/p&gt;
 
 </summary>
         
