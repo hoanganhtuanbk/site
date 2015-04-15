@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-04-15T13:17:51+00:00</updated>
+    <updated>2015-04-15T13:32:02+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/15/design-patterns-in-the-21st-century-part-three/</id>
+        <title>Design Patterns in the 21st Century: The Adapter Pattern</title>
+        <link href="/2015/04/15/design-patterns-in-the-21st-century-part-three/"/>
+        <published>2015-04-15T13:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;This is part three of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/15/making-sense-of-docker-volumes/</id>
@@ -174,18 +186,6 @@
         <published>2014-12-06T18:31:00+00:00</published>
         
         <summary type="html">&lt;p&gt;This month Codurance is celebrating its first birthday. A lot has happened during that time, including the hiring of two apprentices. One of which, I am pleased to say is me!&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/11/26/looking-forward-to-2015/</id>
-        <title>Codurance - Looking forward to 2015</title>
-        <link href="/2014/11/26/looking-forward-to-2015/"/>
-        <published>2014-11-26T18:31:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;One year ago Mash and I were thinking how great it would be to be surrounded by great craftsmen, work with good clients, mentor talented apprentices, and a have decent office. We thought to ourselves: “We don’t want a company with employees. We want a company where we have friends. Friends where besides enjoying their company, we also admired their professionalism and knowledge.&quot; One year later, we are happy to say we achieved all that. We had a great first year and managed to build a very talented team, which we are hoping to grow even more next year.&lt;/p&gt;
 
 </summary>
         
