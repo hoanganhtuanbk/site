@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-04-15T13:32:02+00:00</updated>
+    <updated>2015-04-16T17:57:50+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/16/design-patterns-in-the-21st-century-part-four/</id>
+        <title>Design Patterns in the 21st Century: The Chain of Responsibility Pattern</title>
+        <link href="/2015/04/16/design-patterns-in-the-21st-century-part-four/"/>
+        <published>2015-04-16T17:30:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Here&#39;s a thing you might not see a lot.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/15/design-patterns-in-the-21st-century-part-three/</id>
@@ -174,18 +186,6 @@
         <published>2014-12-13T00:27:00+00:00</published>
         
         <summary type="html">&lt;p&gt;What should my first test be? What should I test next? These are common questions that I&#39;m asked over and over again. I quite often ask these questions myself. Deciding on what to test is hard. Deciding on the order that things should be tested is even harder.[^1] But writing tests first is not the only problem. How often did we get frustrated while dealing with existing tests which we had no idea what they are testing?&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/12/06/life-as-an-apprentice/</id>
-        <title>What is it like to be a Codurance Apprentice?</title>
-        <link href="/2014/12/06/life-as-an-apprentice/"/>
-        <published>2014-12-06T18:31:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;This month Codurance is celebrating its first birthday. A lot has happened during that time, including the hiring of two apprentices. One of which, I am pleased to say is me!&lt;/p&gt;
 
 </summary>
         
