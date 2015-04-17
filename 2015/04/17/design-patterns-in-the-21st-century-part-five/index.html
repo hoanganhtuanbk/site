@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance - Toby Retallick</title>
+<title>Codurance - Design Patterns in the 21st Century: Conclusion</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,8 @@
 <!--fonts -->
 <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
 
+
+<link rel="canonical" href="http://monospacedmonologues.com/post/116651319855/design-patterns-in-the-21st-century-conclusion" />
 
 
 <script>
@@ -96,7 +98,7 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">Toby Retallick</h2>
+            <h2 class="pull-left">Design Patterns in the 21st Century: Conclusion</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 
@@ -119,224 +121,42 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-  
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 17 Apr 2015</li>
+                <li><i class="fa fa-pencil"></i> Samir Talwar</li>
+            </ul>
+        </div>
         
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/2015-04-15-docker-volumes/docker-graphic.png" alt=""/></p>
+
         
-            <p class="blog-image-attr">
-                
-                    <a href="http://xebia.github.io/docker-introduction/slides/img/docker-filesystems-busyboxrw.png">Mark van Holsteijn & Adé Mochtar, Xebia</a>
-                
-            </p>
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/2015-04-13-design-patterns/part-five.jpg" alt="Design Patterns in the 21st Century: Conclusion">
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2015/04/15/making-sense-of-docker-volumes/">Making Sense of Docker Volumes</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 15 Apr 2015</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/docker/">docker</a>
-                
-                    <a href="/blog/tag/volumes/">volumes</a>
-                
-            </li>
-            
-        </ul>
-        <p>[Docker](http://www.docker.com) is a platform that allows users to build, ship, and run distributed applications. Applications are stored inside docker containers. A docker container uses a Union File System which consists of read-only layers and a read / write layer on top. Whilst the container is running, it is possible to...</p>
 
-        <p><a class="btn-u btn-u-small" href="/2015/04/15/making-sense-of-docker-volumes/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
+        <p>This is part five of my talk, <a href="http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html">Design Patterns in the 21st Century</a>.</p>
 
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="http://www.retrogamer.net/wp-content/uploads/2014/03/SirAlanSugarWith464.png" alt=""/></p>
+<hr />
+
+<p>Over the past week, we've seen three examples of design patterns that can be drastically improved by approaching them with a functional mindset. Together, these three span the spectrum.</p>
+
+<ul>
+<li>The Abstract Factory pattern is an example of a <strong>creational</strong> pattern, which increases flexibility during the application wiring process</li>
+<li>The Adapter pattern, a <strong>structural</strong> pattern, is a huge aid in object composition</li>
+<li>The Chain of Responsibility pattern is a good demonstration of a <strong>behavioural</strong> <em>anti-pattern</em> that actually makes the communication between objects <em>more</em> rigid</li>
+</ul>
+
+
+<p>We took these three patterns, made them a lot smaller, removed a lot of boilerplate, and knocked out a bunch of extra classes we didn't need in the process.</p>
+
+<p>In all cases, we split things apart, only defining the coupling between them in the way objects were constructed. But more than that: we made them functional. The difference between domain objects and infrastructural code became much more explicit. This allowed us to generalise, using the built-in interfaces to do most of the heavy lifting for us, allowing us to eradicate lots of infrastructural types and concentrate on our domain.</p>
+
+<p>It's funny, all this talk about our business domain. It's almost as if the resulting code became a lot more object-oriented too.</p>
+
+
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2014/12/06/life-as-an-apprentice/">What is it like to be a Codurance Apprentice?</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 06 Dec 2014</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/craftsmanship/">craftsmanship</a>
-                
-                    <a href="/blog/tag/apprenticeship/">apprenticeship</a>
-                
-            </li>
-            
-        </ul>
-        <p>This month Codurance is celebrating its first birthday. A lot has happened during that time, including the hiring of two apprentices. One of which, I am pleased to say is me! Three months into my apprenticeship, I thought I would provide some insight into how my apprenticeship is progressing, what...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2014/12/06/life-as-an-apprentice/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-          
-  
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/jenkinsPost/jenkins.png" alt=""/></p>
+        <hr/>
+        <p class="cross-post"><a href="http://monospacedmonologues.com/post/116651319855/design-patterns-in-the-21st-century-conclusion">This post was cross-posted to my personal blog.</a></p>
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/">A Very Quick Guide to Deploying Artifacts With Jenkins</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 03 Oct 2014</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/toby-retallick/'>Toby Retallick</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/continuous integration/">continuous integration</a>
-                
-                    <a href="/blog/tag/Jenkins/">Jenkins</a>
-                
-            </li>
-            
-        </ul>
-        <p>[Jenkins](http://jenkins-ci.org/) is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client. Both Amir and I have just recently started at Codurance as apprentices. This week, one of our tasks was to...</p>
-
-        <p><a class="btn-u btn-u-small" href="/2014/10/03/guide-to-deploying-artifacts-with-jenkins/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
-
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-
     </div>
     <!--End Blog Post-->
 </div>

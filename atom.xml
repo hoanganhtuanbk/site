@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-04-16T17:57:50+00:00</updated>
+    <updated>2015-04-17T16:53:32+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/04/17/design-patterns-in-the-21st-century-part-five/</id>
+        <title>Design Patterns in the 21st Century: Conclusion</title>
+        <link href="/2015/04/17/design-patterns-in-the-21st-century-part-five/"/>
+        <published>2015-04-17T17:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;This is part five of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/16/design-patterns-in-the-21st-century-part-four/</id>
@@ -174,18 +186,6 @@
         <published>2015-01-09T10:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;We had the pleasure to visit a client who asked us to facilitate a workshop. The aim was to create a plan for their investors in order to release the next round of funding for a social media website. They had a product backlog that was full of of features but they were not sure how to prioritise them. They also had a release roadmap but were unclear as to why certain things needed to be done.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2014/12/13/naming-test-classes-and-methods/</id>
-        <title>Naming Test Classes and Methods</title>
-        <link href="/2014/12/13/naming-test-classes-and-methods/"/>
-        <published>2014-12-13T00:27:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;What should my first test be? What should I test next? These are common questions that I&#39;m asked over and over again. I quite often ask these questions myself. Deciding on what to test is hard. Deciding on the order that things should be tested is even harder.[^1] But writing tests first is not the only problem. How often did we get frustrated while dealing with existing tests which we had no idea what they are testing?&lt;/p&gt;
 
 </summary>
         
