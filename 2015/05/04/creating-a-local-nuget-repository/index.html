@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Codurance - Amir Bazazi</title>
+<title>Codurance - Creating a local NuGet repository for offline development</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +96,7 @@
 
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
-            <h2 class="pull-left">Amir Bazazi</h2>
+            <h2 class="pull-left">Creating a local NuGet repository for offline development</h2>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 
@@ -119,174 +119,46 @@
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         
-
-  
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="fa fa-calendar"></i> 04 May 2015</li>
+                <li><i class="fa fa-pencil"></i> Steve Lydford</li>
+            </ul>
+        </div>
         
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-            <div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="/assets/img/custom/blog/installing-prezto/prezto-shell.png" alt=""/></p>
+
         
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="/2015/03/16/installing-zprezto-a-quick-guide/">How to install Prezto with Zsh for your OS X Terminal</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> 16 Mar 2015</li>
-            <li><i class="fa fa-user"></i> <a class='author' href='/blog/author/amir-bazazi/'>Amir Bazazi</a> </li>
-            
-            <li><i class="fa fa-tags"></i>
-                
-                    <a href="/blog/tag/customisation/">customisation</a>
-                
-                    <a href="/blog/tag/personal/">personal</a>
-                
-                    <a href="/blog/tag/zsh/">zsh</a>
-                
-                    <a href="/blog/tag/terminal/">terminal</a>
-                
-                    <a href="/blog/tag/workflow/">workflow</a>
-                
-                    <a href="/blog/tag/efficiency/">efficiency</a>
-                
-            </li>
-            
-        </ul>
-        <p>Once in a while, whether it be by someone I'm pairing with or someone who's just peeked over my shoulder, I'll get asked how I "got my terminal to look like that". From now on I'm just going to direct them to this post as I'm going to take a...</p>
+            <img class="img-responsive thumbnail blog-post-image" src="/assets/img/custom/blog/2015-05-01-creating-a-local-nuget-repository/package-delivery.png" alt="Creating a local NuGet repository for offline development">
+        
 
-        <p><a class="btn-u btn-u-small" href="/2015/03/16/installing-zprezto-a-quick-guide/"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
-</div>
+        <p>I spend several hours each week on long-distance train journeys and often use the time to code, whether on a pet project or practising a kata or two. Large parts of this journey have patchy-at-best mobile data coverage, so tools with a reliance on a stable internet connection can cause problems. One of these tools is the NuGet Package Manager in Visual Studio.</p>
 
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
-          
-  
+<p>In the most simple cases, where a solution just needs a reference to a single DLL, local copies are an adequate solution. However, that is not always sufficient as some of the libraries I want to use are vastly more complex with extended dependency chains. I was really beginning to miss NuGet while working offline, so I decided to set up my own offline local NuGet repository. It is a surprisingly simple operation, yet I had to do quite a bit of hunting around to find all the steps I needed to perform and failed to find a them all listed in a single article. So here goes…</p>
 
+<p>Firstly, you’ll need to create a local folder to house all your local NuGet packages. I created a folder called <em>‘LocalNugetRepository’</em> within the <em>Documents\Visual Studio 2013</em> folder, but you can call it whatever you like and place it anywhere you have sufficient privileges:</p>
+
+<p><img src="/assets/img/custom/blog/2015-05-01-creating-a-local-nuget-repository/local-folder.png" alt="Local repository folder" /></p>
+
+<p>The next step is to download the NuGet packages you wish to be able to use offline into this folder. Packages can be downloaded from <a href="http://www.nuget.org">nuget.org</a>. Importantly, you must be logged in to this site to be able to download packages, so go ahead and log in, or register for a new account if you don’t already have one.</p>
+
+<p>Once you are logged in, search for the packages you require and click the <em>‘Download’</em> link in the left hand menu of each (highlighted below). <strong>This link will not be present in the menu if you are not logged in:</strong></p>
+
+<p><img src="/assets/img/custom/blog/2015-05-01-creating-a-local-nuget-repository/nuget-download.png" alt="Downloading packages from nuget.org" /></p>
+
+<p>Once you have successfully downloaded the <em>.nupkg</em> files you require into your local repository folder, head into Visual Studio and open the NuGet Settings dialog via <em>Tools > NuGet Package Manager > Package Manager Settings</em>. Click the Package Sources tab within the settings dialog, followed by the ‘plus’ icon in the top left to add a new package source:</p>
+
+<p><img src="/assets/img/custom/blog/2015-05-01-creating-a-local-nuget-repository/nuget-settings.png" alt="Adding a local package source" /></p>
+
+<p>Enter the Name and Source of your local repository. The name can be any string and will be the name displayed in the NuGet Package Manager within Visual Studio.</p>
+
+<p>Now that you have added the local package source, you will be able to use your offline local repository from within Visual Studio in the usual way, either via the Console or via the Package Dialog, by selecting it from the <em>Package Source</em> menu, without the need for an active internet connection:</p>
+
+<p><img src="/assets/img/custom/blog/2015-05-01-creating-a-local-nuget-repository/package-manager.png" alt="Using the new local package source" /></p>
+
+<p>It is worth noting here that if you downloaded any pre-release packages from <a href="http://www.nuget.org">nuget.org</a> into your local repository they will not be displayed by default within either the Package Manager Console or GUI dialog. This is by design, however it can be overridden in the Package Manager Console through the use of the <code>-IncludePrerelease</code> flag. For more information, see the <a href="https://docs.nuget.org/create/versioning#installing-prerelease-packages">official documentation</a>.</p>
+
+
+        
     </div>
     <!--End Blog Post-->
 </div>

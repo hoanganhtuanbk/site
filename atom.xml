@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-01T08:41:35+00:00</updated>
+    <updated>2015-05-04T09:32:47+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/05/04/creating-a-local-nuget-repository/</id>
+        <title>Creating a local NuGet repository for offline development</title>
+        <link href="/2015/05/04/creating-a-local-nuget-repository/"/>
+        <published>2015-05-04T09:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;I spend several hours each week on long-distance train journeys and often use the time to code, whether on a pet project or practising a kata or two. Large parts of this journey have patchy-at-best mobile data coverage, so tools with a reliance on a stable internet connection can cause problems. One of these tools is the NuGet Package Manager in Visual Studio.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/04/17/design-patterns-in-the-21st-century-part-five/</id>
@@ -174,18 +186,6 @@
         <published>2015-01-27T10:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;One of the things that make code complicated to read and understand is when the instructions inside a method are at different levels of abstraction.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/01/09/impact-mapping/</id>
-        <title>Impact Mapping</title>
-        <link href="/2015/01/09/impact-mapping/"/>
-        <published>2015-01-09T10:30:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;We had the pleasure to visit a client who asked us to facilitate a workshop. The aim was to create a plan for their investors in order to release the next round of funding for a social media website. They had a product backlog that was full of of features but they were not sure how to prioritise them. They also had a release roadmap but were unclear as to why certain things needed to be done.&lt;/p&gt;
 
 </summary>
         
