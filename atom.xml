@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-04T09:32:47+00:00</updated>
+    <updated>2015-05-06T00:42:35+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/05/06/interview-with-sandro-mancuso/</id>
+        <title>Q&A about The Software Craftsman</title>
+        <link href="/2015/05/06/interview-with-sandro-mancuso/"/>
+        <published>2015-05-06T01:26:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;&lt;em&gt;Our co-founder &lt;a href=&quot;http://twitter.com/sandromancuso&quot;&gt;Sandro Mancuso&lt;/a&gt; was &lt;a href=&quot;http://www.infoq.com/articles/mancuso-software-craftsman&quot;&gt;interviewed by Ben Linders from InfoQ&lt;/a&gt;. Below is the full transcript.&lt;/em&gt;&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/05/04/creating-a-local-nuget-repository/</id>
@@ -174,18 +186,6 @@
         <published>2015-03-15T22:49:00+00:00</published>
         
         <summary type="html">&lt;p&gt;By default, we always do our work in pairs. We strongly believe that the quality achieved by two people working on the same task is superior to when done by a single person. However, there are times where pairing is not very efficient.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/01/27/balanced-abstraction-principle/</id>
-        <title>Balanced Abstraction Principle</title>
-        <link href="/2015/01/27/balanced-abstraction-principle/"/>
-        <published>2015-01-27T10:30:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;One of the things that make code complicated to read and understand is when the instructions inside a method are at different levels of abstraction.&lt;/p&gt;
 
 </summary>
         
