@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-06T00:42:35+00:00</updated>
+    <updated>2015-05-07T07:30:00+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -18,6 +18,18 @@
         <published>2015-05-06T01:26:00+00:00</published>
         
         <summary type="html">&lt;p&gt;&lt;em&gt;Our co-founder &lt;a href=&quot;http://twitter.com/sandromancuso&quot;&gt;Sandro Mancuso&lt;/a&gt; was &lt;a href=&quot;http://www.infoq.com/articles/mancuso-software-craftsman&quot;&gt;interviewed by Ben Linders from InfoQ&lt;/a&gt;. Below is the full transcript.&lt;/em&gt;&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/2015/05/04/side-effects-and-java-8-streams/</id>
+        <title>Side effects and Java 8 streams</title>
+        <link href="/2015/05/04/side-effects-and-java-8-streams/"/>
+        <published>2015-05-04T11:22:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;There is a lot of excitement in the Java community since Java 8 was released. Lambdas and Streams are a massive improvement and nobody wants to go back to the old days. Today, however, I want to talk about the caveats of some use of Java Streams.&lt;/p&gt;
 
 </summary>
         
@@ -174,18 +186,6 @@
         <published>2015-03-16T22:49:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Once in a while, whether it be by someone I&#39;m pairing with or someone who&#39;s just peeked over my shoulder, I&#39;ll get asked how I &quot;got my terminal to look like that&quot;. From now on I&#39;m just going to direct them to this post as I&#39;m going to take a short while to explain how I achieved the colourful canvas I log into every day.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/15/rethinking-pair-programming/</id>
-        <title>Rethinking Pair Programming</title>
-        <link href="/2015/03/15/rethinking-pair-programming/"/>
-        <published>2015-03-15T22:49:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;By default, we always do our work in pairs. We strongly believe that the quality achieved by two people working on the same task is superior to when done by a single person. However, there are times where pairing is not very efficient.&lt;/p&gt;
 
 </summary>
         
