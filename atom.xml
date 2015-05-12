@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-12T10:53:30+00:00</updated>
+    <updated>2015-05-12T13:56:25+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/05/12/does-tdd-lead-to-good-design/</id>
+        <title>Does TDD really lead to good design?</title>
+        <link href="/2015/05/12/does-tdd-lead-to-good-design/"/>
+        <published>2015-05-12T14:32:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Recently I tweeted that &lt;a href=&quot;https://twitter.com/sandromancuso/status/588503877235781632&quot;&gt;TDD can’t lead to a good design if we don’t know what good design looks like&lt;/a&gt;. I was also saying that we probably should teach design before TDD (or at least, at the same time). This tweet led to a discussions with &lt;a href=&quot;https://twitter.com/jbrains&quot;&gt;J.B. Rainsberger&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/RonJeffries&quot;&gt;Ron Jeffries&lt;/a&gt;, and a few others. J.B. and I ended up having a live &lt;a href=&quot;https://www.youtube.com/watch?v=ty3p5VDcoOI&quot;&gt;discussion on Hangout on Air&lt;/a&gt; later on.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/05/06/interview-with-sandro-mancuso/</id>
@@ -174,18 +186,6 @@
         <published>2015-03-17T10:49:00+00:00</published>
         
         <summary type="html">&lt;p&gt;In the 90’s we were witnesses of browser wars. Wars which created one of the most hated languages: Javascript. Web designers touch by Javascript at the beginning of 21st century constantly refused to fix bugs titled as “It doesn’t work in Internet Explorer” or “Netscape Navigator doesn’t show…”. At this time we used pure languages and tried to understand the design of our web browser in order to cope with compatibility issues.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/16/installing-zprezto-a-quick-guide/</id>
-        <title>How to install Prezto with Zsh for your OS X Terminal</title>
-        <link href="/2015/03/16/installing-zprezto-a-quick-guide/"/>
-        <published>2015-03-16T22:49:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Once in a while, whether it be by someone I&#39;m pairing with or someone who&#39;s just peeked over my shoulder, I&#39;ll get asked how I &quot;got my terminal to look like that&quot;. From now on I&#39;m just going to direct them to this post as I&#39;m going to take a short while to explain how I achieved the colourful canvas I log into every day.&lt;/p&gt;
 
 </summary>
         
