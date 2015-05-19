@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-18T18:10:59+00:00</updated>
+    <updated>2015-05-19T12:18:50+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/05/19/working-with-slas/</id>
+        <title>Working with SLAs</title>
+        <link href="/2015/05/19/working-with-slas/"/>
+        <published>2015-05-19T13:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;If you spend any time designing applications which use third-party platforms and services, you will have spent time considering Service Level Agreements (SLAs). The &lt;em&gt;tl;dr&lt;/em&gt; part of any SLA, the bit the everyone is actually interested in, is the uptime guarantee. However, this seemingly simple number has some hidden meanings that you should be aware of when designing applications and reporting your SLAs to customers.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/05/18/applying-transformation-priority-premise-to-roman-numerals-kata/</id>
@@ -174,18 +186,6 @@
         <published>2015-03-23T14:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a &quot;ballpark&quot; figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/20/user-stories-guidelines/</id>
-        <title>User Story Guidelines</title>
-        <link href="/2015/03/20/user-stories-guidelines/"/>
-        <published>2015-03-20T21:22:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;&lt;em&gt;Disclaimer: This post was extracted from an internal Codurance document used to help our apprentices to learn how we work. We all understand that each project is different and that by no means we can apply exactly the same techniques and practices everywhere. However, the text below serves not only as a foundation but also as a guideline for all of us when it comes to user stories. There are many good books and posts written about user stories. By no means this post is meant to be a summary of all the good practices around this area.&lt;/em&gt;&lt;/p&gt;
 
 </summary>
         
