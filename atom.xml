@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-05-21T09:52:23+00:00</updated>
+    <updated>2015-06-04T08:13:36+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/02/crank-up-the-volume/</id>
+        <title>Crank Up The Volume And Forget Your Pomodoros</title>
+        <link href="/2015/06/02/crank-up-the-volume/"/>
+        <published>2015-06-02T08:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Together, &lt;a href=&quot;https://twitter.com/stevelydford&quot;&gt;Steve Lydford&lt;/a&gt; and I came up with a way to work that we don&#39;t think has been put to paper before.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/05/19/working-with-slas/</id>
@@ -174,18 +186,6 @@
         <published>2015-03-23T22:49:00+00:00</published>
         
         <summary type="html">&lt;h1&gt;Multiple projects in Visual Studio solutions considered harmful&lt;/h1&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/23/project-sizing/</id>
-        <title>Project Sizing</title>
-        <link href="/2015/03/23/project-sizing/"/>
-        <published>2015-03-23T14:30:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a &quot;ballpark&quot; figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation.&lt;/p&gt;
 
 </summary>
         
