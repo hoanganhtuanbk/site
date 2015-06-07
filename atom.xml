@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-06T16:38:57+00:00</updated>
+    <updated>2015-06-07T18:31:17+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -12,10 +12,22 @@
     <rights>Copyright (c) Codurance</rights>
     
     <entry>
-        <id>/2015/06/02/crank-up-the-volume/</id>
+        <id>/2015/06/07/conversing-on-conversations-at-socrates-uk-2015/</id>
+        <title>Conversations About Conversations at SoCraTes UK 2015</title>
+        <link href="/2015/06/07/conversing-on-conversations-at-socrates-uk-2015/"/>
+        <published>2015-06-07T18:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;OK, brain dump time.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/2015/06/04/crank-up-the-volume/</id>
         <title>Crank Up The Volume And Forget Your Pomodoros</title>
-        <link href="/2015/06/02/crank-up-the-volume/"/>
-        <published>2015-06-02T08:00:00+00:00</published>
+        <link href="/2015/06/04/crank-up-the-volume/"/>
+        <published>2015-06-04T08:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Together, &lt;a href=&quot;https://twitter.com/stevelydford&quot;&gt;Steve Lydford&lt;/a&gt; and I came up with a way to work that we don&#39;t think has been put to paper before.&lt;/p&gt;
 
@@ -174,18 +186,6 @@
         <published>2015-03-29T21:22:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Ludwig Wittgenstein was one the greatest philosophers of 20th century. His book Tractatus Logico-Philosophicus addresses the limits of language and its relationship with reality. A friend of mine, great polemicist, suggested me to read it some years ago to understand one of his favourites conversational &lt;em&gt;deux ex machina&lt;/em&gt;: &quot;I can&#39;t prove that, because of the inherent insufficiency of the language.&quot;&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/23/multiple-projects-in-visual-studio/</id>
-        <title>Multiple projects in Visual Studio solutions considered harmful</title>
-        <link href="/2015/03/23/multiple-projects-in-visual-studio/"/>
-        <published>2015-03-23T22:49:00+00:00</published>
-        
-        <summary type="html">&lt;h1&gt;Multiple projects in Visual Studio solutions considered harmful&lt;/h1&gt;
 
 </summary>
         
