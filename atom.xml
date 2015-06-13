@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-08T22:46:22+00:00</updated>
+    <updated>2015-06-13T22:55:59+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/13/extreme-learning/</id>
+        <title>A really good way to make your learning more effective</title>
+        <link href="/2015/06/13/extreme-learning/"/>
+        <published>2015-06-13T10:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Last weekend I was lucky enough to attend &lt;a href=&quot;http://socratesuk.org&quot;&gt;Socrates UK 2014&lt;/a&gt;, an annual international software craftsmanship gathering set in the scenic surroundings of Farnham, Oxfordshire. If you have not done so, I defintely recommend checkout out this conference, either in England or the other Socrates events taking place across Europe (Germany, Belgium, France ...).&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/06/07/conversing-on-conversations-at-socrates-uk-2015/</id>
@@ -174,18 +186,6 @@
         <published>2015-04-13T11:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;I&#39;ve been having a bit of trouble blogging recently. In an effort to get back into it, I thought I&#39;d take &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;a talk that I presented at JAX London last year&lt;/a&gt;, split it up into blog-sized posts as it&#39;s pretty long, and post them all week. If you haven&#39;t read it before or seen the talk, I hope you enjoy it.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/03/29/dangerous-words/</id>
-        <title>Dangerous Words</title>
-        <link href="/2015/03/29/dangerous-words/"/>
-        <published>2015-03-29T21:22:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Ludwig Wittgenstein was one the greatest philosophers of 20th century. His book Tractatus Logico-Philosophicus addresses the limits of language and its relationship with reality. A friend of mine, great polemicist, suggested me to read it some years ago to understand one of his favourites conversational &lt;em&gt;deux ex machina&lt;/em&gt;: &quot;I can&#39;t prove that, because of the inherent insufficiency of the language.&quot;&lt;/p&gt;
 
 </summary>
         
