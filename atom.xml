@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-14T08:14:11+00:00</updated>
+    <updated>2015-06-14T17:13:08+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/13/big-data-skills-spectrum/</id>
+        <title>Big Data Skills Spectrum</title>
+        <link href="/2015/06/13/big-data-skills-spectrum/"/>
+        <published>2015-06-13T18:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;Big Data has been a hype for many years. I’ve seen a few “Big Data” projects start in the past with a lot of fanfare and promise.The promise has always been that “we will start getting a holistic picture of our departmental silos and gain numerous insights from our data that will help us get ahead of our competitors”. The promise was rarely, if ever, fulfilled and the “Big Data” team slowly faded into the rest of the melting pot that we call the “IT department” in most large enterprises.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/06/13/extreme-learning/</id>
@@ -174,18 +186,6 @@
         <published>2015-04-14T09:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;This is part two of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/04/13/design-patterns-in-the-21st-century-part-one/</id>
-        <title>Design Patterns in the 21st Century, Part One</title>
-        <link href="/2015/04/13/design-patterns-in-the-21st-century-part-one/"/>
-        <published>2015-04-13T11:30:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;I&#39;ve been having a bit of trouble blogging recently. In an effort to get back into it, I thought I&#39;d take &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;a talk that I presented at JAX London last year&lt;/a&gt;, split it up into blog-sized posts as it&#39;s pretty long, and post them all week. If you haven&#39;t read it before or seen the talk, I hope you enjoy it.&lt;/p&gt;
 
 </summary>
         
