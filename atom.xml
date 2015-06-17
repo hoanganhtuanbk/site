@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-17T08:52:45+00:00</updated>
+    <updated>2015-06-17T10:11:31+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/17/finding-the-biting-point/</id>
+        <title>Finding the biting point with pair programming</title>
+        <link href="/2015/06/17/finding-the-biting-point/"/>
+        <published>2015-06-17T09:00:00+00:00</published>
+        
+        <summary type="html">&lt;h2&gt;The inevitable imbalance in pair programming.&lt;/h2&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/06/17/inflection-point/</id>
@@ -174,18 +186,6 @@
         <published>2015-04-15T13:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;This is part three of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/04/15/making-sense-of-docker-volumes/</id>
-        <title>Making Sense of Docker Volumes</title>
-        <link href="/2015/04/15/making-sense-of-docker-volumes/"/>
-        <published>2015-04-15T09:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;&lt;a href=&quot;http://www.docker.com&quot;&gt;Docker&lt;/a&gt; is a platform that allows users to build, ship, and run distributed applications. Applications are stored inside &lt;strong&gt;docker containers&lt;/strong&gt;.&lt;/p&gt;
 
 </summary>
         
