@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-15T13:25:37+00:00</updated>
+    <updated>2015-06-17T01:35:40+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/17/inflection-point/</id>
+        <title>Inflection Point</title>
+        <link href="/2015/06/17/inflection-point/"/>
+        <published>2015-06-17T02:34:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;We all say that software design is all about trade-offs but how do we actually reason about it? How do we decide how much code we are going to write for a given task? Is the easiest thing that could possibly work the right approach? The simplest? How do we know the &lt;a href=&quot;http://www.infoq.com/presentations/Simple-Made-Easy&quot;&gt;difference between simple and easy&lt;/a&gt;? Is this even the right question?&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/06/13/big-data-skills-spectrum/</id>
@@ -174,18 +186,6 @@
         <published>2015-04-15T09:00:00+00:00</published>
         
         <summary type="html">&lt;p&gt;&lt;a href=&quot;http://www.docker.com&quot;&gt;Docker&lt;/a&gt; is a platform that allows users to build, ship, and run distributed applications. Applications are stored inside &lt;strong&gt;docker containers&lt;/strong&gt;.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/04/14/design-patterns-in-the-21st-century-part-two/</id>
-        <title>Design Patterns in the 21st Century: The Abstract Factory Pattern</title>
-        <link href="/2015/04/14/design-patterns-in-the-21st-century-part-two/"/>
-        <published>2015-04-14T09:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;This is part two of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
 
 </summary>
         
