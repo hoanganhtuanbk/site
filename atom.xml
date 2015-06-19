@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="/atom.xml" rel="self"/>
     <link href=""/>
-    <updated>2015-06-18T10:47:57+00:00</updated>
+    <updated>2015-06-19T15:09:26+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2015/06/19/cloud-application-design-considerations/</id>
+        <title>Cloud Application Design Considerations</title>
+        <link href="/2015/06/19/cloud-application-design-considerations/"/>
+        <published>2015-06-19T17:00:00+00:00</published>
+        
+        <summary type="html">&lt;h1&gt;Cloud Application Design Considerations&lt;/h1&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2015/06/17/finding-the-biting-point/</id>
@@ -174,18 +186,6 @@
         <published>2015-04-16T17:30:00+00:00</published>
         
         <summary type="html">&lt;p&gt;Here&#39;s a thing you might not see a lot.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2015/04/15/design-patterns-in-the-21st-century-part-three/</id>
-        <title>Design Patterns in the 21st Century: The Adapter Pattern</title>
-        <link href="/2015/04/15/design-patterns-in-the-21st-century-part-three/"/>
-        <published>2015-04-15T13:00:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;This is part three of my talk, &lt;a href=&quot;http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html&quot;&gt;Design Patterns in the 21st Century&lt;/a&gt;.&lt;/p&gt;
 
 </summary>
         
